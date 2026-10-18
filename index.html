@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ATHENA 2027 Speaker Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: coluna editorial larga, muito espaço em branco; cada speaker é uma folha com as três peças lado a lado */
+:root{
+  --sand:#F4EEE3; --paper:#FFFFFF; --ink:#4B3125; --muted:#6F5B4F; --sage:#A9A27D; --terra:#B86543; --line:#E3D9C8; --wash:#EFE7D9;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --text:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--sand:#1E1611;--paper:#2A201A;--ink:#F1E8DA;--muted:#C4B4A2;--sage:#B9B28E;--terra:#D98B68;--line:#46372D;--wash:#33281F;color-scheme:dark}}
+:root[data-theme="dark"]{--sand:#1E1611;--paper:#2A201A;--ink:#F1E8DA;--muted:#C4B4A2;--sage:#B9B28E;--terra:#D98B68;--line:#46372D;--wash:#33281F;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--sand);color:var(--ink);font:15px/1.55 var(--text);-webkit-text-size-adjust:100%}
+.wrap{max-width:1240px;margin:0 auto;padding-block:56px 96px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font:500 clamp(40px,6vw,68px)/1.02 var(--display);margin:14px 0 18px;text-wrap:balance}
+h1 em{font-style:italic;color:var(--terra)}
+.lead{max-width:62ch;color:var(--muted);font-size:17px;margin:0}
+h2{font:600 30px/1.15 var(--display);margin:0 0 14px}
+.block{margin-top:56px}
+.tbl{overflow-x:auto;border-top:1px solid var(--ink)}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+td:nth-child(2){font-variant-numeric:tabular-nums;white-space:nowrap}
+.counts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:18px 0 0;font-variant-numeric:tabular-nums;color:var(--muted)}
+.counts b{font:600 26px var(--display);color:var(--ink);margin-right:6px}
+.note{margin-top:28px;padding:18px 22px;background:var(--wash);border-radius:14px;max-width:80ch}
+.note p{margin:0}.note p+p{margin-top:8px}
+.note b{color:var(--terra)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+nav a{color:var(--ink);text-decoration:none;font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+nav a:hover,nav a:focus-visible{border-color:var(--terra);color:var(--terra)}
+.spk{margin-top:40px;padding:28px;background:var(--paper);border-radius:18px;scroll-margin-top:16px}
+.spkhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px;padding-bottom:20px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+.spkhead>div:first-child{min-width:0;flex:1 1 320px}
+.role{margin:0;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+h3{font:italic 600 clamp(28px,3.6vw,38px)/1.1 var(--display);margin:6px 0 4px}
+.sess{margin:0;color:var(--muted);max-width:70ch}
+.tags{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.tags a{color:var(--ink);font-size:13px}
+.code{font-weight:600;letter-spacing:.08em;font-size:13px;padding:5px 12px;border:1px dashed var(--terra);border-radius:8px}
+.code.none{border-color:var(--line);color:var(--muted);letter-spacing:0;font-weight:500}
+.chs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.ch{min-width:0;display:flex;flex-direction:column;gap:12px}
+.shot{display:block;background:var(--wash);border-radius:10px;overflow:hidden;aspect-ratio:4/5;max-width:100%}
+.shot img{width:100%;height:100%;object-fit:contain;display:block}
+.shot:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.chbody{min-width:0;display:flex;flex-direction:column;gap:8px}
+h4{margin:0;font-size:14px;font-weight:600;display:flex;justify-content:space-between;gap:8px}
+h4 span{font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums}
+.meta{margin:0;font-size:13px;color:var(--muted)}
+.url{display:block;font-size:12px;word-break:break-all;color:var(--ink);margin:2px 0 4px}
+pre{margin:0;white-space:pre-wrap;word-break:break-word;font:13px/1.55 var(--text);background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:14px;max-height:320px;overflow:auto}
+.copy{align-self:flex-start;font:600 13px var(--text);color:var(--sand);background:var(--ink);border:0;border-radius:999px;padding:9px 18px;cursor:pointer}
+.copy:hover{background:var(--terra)}.copy:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:var(--muted);font-size:13px}
+footer .ls{font:500 20px var(--display);color:var(--ink)}
+@media (max-width:900px){.chs{grid-template-columns:1fr}.shot{max-width:420px}}
+@media (max-width:480px){.spk{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="eyebrow">Lua Sol Co. for ATHENA International</p>
+<h1>ATHENA 2027 <em>Speaker Kit</em></h1>
+<p class="lead">Everything each speaker needs to announce their session: an Instagram post, an Instagram Story and a LinkedIn post, with the text for each one. Open an image to save it full size, or use the speaker's captions.txt.</p>
+</header>
+
+<section class="block" aria-labelledby="bom">
+<h2 id="bom">Bill of materials</h2>
+<div class="tbl"><table>
+<tr><th>Channel</th><th>Size (px)</th><th>File</th><th>Text</th><th>Link</th></tr>
+<tr><td>Instagram Post</td><td>1080 × 1350 (4:5)</td><td>slug_ig-post_1080x1350.png</td><td>Caption: hook, session, event, Early Bird offer, personal code, @athena_international, hashtags</td><td>Typed in the caption, tracked link for the bio</td></tr>
+<tr><td>Instagram Story</td><td>1080 × 1920 (9:16)</td><td>slug_ig-story_1080x1920.png</td><td>Link sticker, mention sticker, one optional line</td><td>Link sticker with tracking</td></tr>
+<tr><td>LinkedIn Post</td><td>1200 × 1500 (4:5)</td><td>slug_linkedin_1200x1500.png</td><td>Post: hook, short story, event, offer, personal code, hashtags</td><td>Clickable, with tracking</td></tr>
+</table></div>
+<p class="counts"><span><b>26</b>speakers</span><span><b>78</b>images</span><span><b>78</b>texts</span><span><b>3</b>channels</span></p>
+<div class="note">
+<p><b>Before sending:</b> the personal codes (20% off General Admission and VIP) must be live in Zeffy, and each speaker should approve the text written in their voice.</p>
+<p>Every link carries <code>utm_campaign=speaker_kit_2027</code> and the speaker in <code>utm_content</code>, so visits show per speaker and per channel. The code shows the sales.</p>
+</div>
+<nav aria-label="Speakers"><a href="#amy-blasen">Dr. Amy Blasen</a><a href="#amy-bonomi">Dr. Amy Bonomi</a><a href="#bobby-hoffman">Bobby Hoffman</a><a href="#carlene-kanellis">Carlene Kanellis</a><a href="#carrie-rathbun-hawks">Carrie Rathbun Hawks</a><a href="#charlene-reynolds">Charlene Reynolds</a><a href="#dat-tran">Dat Tran</a><a href="#deb-hart">Deb Hart</a><a href="#dominique-ranieri">Dominique Ranieri</a><a href="#gavriella-schuster">Gavriella Schuster</a><a href="#heather-reaume">Heather Reaume</a><a href="#isadora-maria">Isadora Maria</a><a href="#jc-ayers">JC Ayers</a><a href="#jody-bishop-pompili">Jody Bishop-Pompili</a><a href="#karen-bird">Karen Bird</a><a href="#karol-pelletier">Karol Pelletier</a><a href="#kimberli-green">Kimberli Green</a><a href="#kurt-kwiatkowski">Kurt Kwiatkowski</a><a href="#linda-ackley-eaker">Linda Ackley-Eaker</a><a href="#melissa-cooper">Melissa Cooper</a><a href="#michelle-massey">Michelle Massey</a><a href="#moacir-antonelli-ponti">Dr. Moacir Antonelli Ponti</a><a href="#nicole-noll-williams">Nicole Noll-Williams</a><a href="#paula-farmer">Paula Farmer</a><a href="#rachel-b-lee">Rachel B. Lee</a><a href="#traci-costa">Traci Costa</a></nav>
+</section>
+
+<section class="spk" id="amy-blasen">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Dr. Amy Blasen</h3><p class="sess">Menopause 101: It&#x27;s Not “All in Your Head” or “Just Aging”</p></div>
+<div class="tags"><span class="code">BLASEN27</span><a href="amy-blasen/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="amy-blasen/amy-blasen_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="amy-blasen/amy-blasen_ig-post_1080x1350.png" alt="Dr. Amy Blasen, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="amy-blasen-ig">Brain fog, sleepless nights, not feeling like yourself? It&#x27;s not all in your head.
+
+My micro-lab: “Menopause 101: It&#x27;s Not ‘All in Your Head’ or ‘Just Aging.’”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code BLASEN27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="amy-blasen-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="amy-blasen/amy-blasen_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="amy-blasen/amy-blasen_ig-story_1080x1920.png" alt="Dr. Amy Blasen, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-blasen</span>Mention sticker @athena_international</p>
+<pre id="amy-blasen-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="amy-blasen-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="amy-blasen/amy-blasen_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="amy-blasen/amy-blasen_linkedin_1200x1500.png" alt="Dr. Amy Blasen, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="amy-blasen-li">Many women hit menopause at the peak of their careers. Few workplaces talk about it.
+
+I&#x27;m a board-certified emergency physician with three decades of clinical leadership and the author of The Modern Menopause Action Plan. In my micro-lab, Menopause 101: It&#x27;s Not “All in Your Head” or “Just Aging,” we&#x27;ll talk openly about what menopause really does, and what actually helps.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code BLASEN27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-blasen
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="amy-blasen-li">Copy text</button></div></article>
+</div></section><section class="spk" id="amy-bonomi">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Dr. Amy Bonomi</h3><p class="sess">Hopscotch vs. Sandbox: Women, Work, and the Broader Environment</p></div>
+<div class="tags"><span class="code">BONOMI27</span><a href="amy-bonomi/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="amy-bonomi/amy-bonomi_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="amy-bonomi/amy-bonomi_ig-post_1080x1350.png" alt="Dr. Amy Bonomi, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="amy-bonomi-ig">Hopscotch or sandbox: which game are women playing at work?
+
+My micro-lab: “Hopscotch vs. Sandbox: Women, Work, and the Broader Environment.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code BONOMI27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="amy-bonomi-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="amy-bonomi/amy-bonomi_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="amy-bonomi/amy-bonomi_ig-story_1080x1920.png" alt="Dr. Amy Bonomi, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-bonomi</span>Mention sticker @athena_international</p>
+<pre id="amy-bonomi-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="amy-bonomi-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="amy-bonomi/amy-bonomi_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="amy-bonomi/amy-bonomi_linkedin_1200x1500.png" alt="Dr. Amy Bonomi, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="amy-bonomi-li">Women&#x27;s careers are shaped as much by the environment around them as by their own choices.
+
+As Dean of the College of Health and Human Services at San Diego State University, and founder of the Women&#x27;s Leadership Institute at Michigan State University, I&#x27;ve spent my career on that question. In my micro-lab, Hopscotch vs. Sandbox: Women, Work, and the Broader Environment, we&#x27;ll look at the systems around us and how to lead within them.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code BONOMI27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-bonomi
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="amy-bonomi-li">Copy text</button></div></article>
+</div></section><section class="spk" id="bobby-hoffman">
+<header class="spkhead"><div><p class="role">Keynote Speaker</p><h3>Bobby Hoffman</h3><p class="sess">When Pressure Takes Over: Leading Yourself Before You Lead the Moment</p></div>
+<div class="tags"><span class="code">HOFFMAN27</span><a href="bobby-hoffman/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="bobby-hoffman/bobby-hoffman_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="bobby-hoffman/bobby-hoffman_ig-post_1080x1350.png" alt="Bobby Hoffman, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="bobby-hoffman-ig">Before you lead the moment, you have to lead yourself.
+
+My keynote: “When Pressure Takes Over: Leading Yourself Before You Lead the Moment.” I&#x27;m also one of your emcees.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code HOFFMAN27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="bobby-hoffman-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="bobby-hoffman/bobby-hoffman_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="bobby-hoffman/bobby-hoffman_ig-story_1080x1920.png" alt="Bobby Hoffman, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=bobby-hoffman</span>Mention sticker @athena_international</p>
+<pre id="bobby-hoffman-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="bobby-hoffman-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="bobby-hoffman/bobby-hoffman_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="bobby-hoffman/bobby-hoffman_linkedin_1200x1500.png" alt="Bobby Hoffman, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="bobby-hoffman-li">Pressure shows up for every leader. What you do in the first ten seconds is what people remember.
+
+As a leadership facilitator and cofounder of Thought Partner Services, I work with leaders at the exact moment pressure takes over. In my keynote, When Pressure Takes Over: Leading Yourself Before You Lead the Moment, we&#x27;ll build the habits that keep you steady, clear and present when the stakes rise. I&#x27;ll also be one of your emcees for all three days.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code HOFFMAN27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=bobby-hoffman
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="bobby-hoffman-li">Copy text</button></div></article>
+</div></section><section class="spk" id="carlene-kanellis">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Carlene Kanellis</h3><p class="sess">Morning Wellness</p></div>
+<div class="tags"><span class="code">KANELLIS27</span><a href="carlene-kanellis/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="carlene-kanellis/carlene-kanellis_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="carlene-kanellis/carlene-kanellis_ig-post_1080x1350.png" alt="Carlene Kanellis, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="carlene-kanellis-ig">Start every conference morning grounded.
+
+I&#x27;m leading Morning Wellness with Deb Hart on Friday and Saturday.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code KANELLIS27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="carlene-kanellis-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="carlene-kanellis/carlene-kanellis_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="carlene-kanellis/carlene-kanellis_ig-story_1080x1920.png" alt="Carlene Kanellis, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carlene-kanellis</span>Mention sticker @athena_international</p>
+<pre id="carlene-kanellis-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="carlene-kanellis-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="carlene-kanellis/carlene-kanellis_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="carlene-kanellis/carlene-kanellis_linkedin_1200x1500.png" alt="Carlene Kanellis, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="carlene-kanellis-li">The best leadership days start before the first keynote.
+
+As the founder of Modern Day Medicine Woman, I guide women through breathwork, ritual and sisterhood. With Deb Hart, I&#x27;ll lead the Morning Wellness sessions on Friday and Saturday, so you walk into every session centered and ready.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code KANELLIS27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carlene-kanellis
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="carlene-kanellis-li">Copy text</button></div></article>
+</div></section><section class="spk" id="carrie-rathbun-hawks">
+<header class="spkhead"><div><p class="role">Panel Speaker</p><h3>Carrie Rathbun Hawks</h3><p class="sess">Money, Boundaries, and Running a Small Business for Sustainable Growth</p></div>
+<div class="tags"><span class="code">HAWKS27</span><a href="carrie-rathbun-hawks/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_ig-post_1080x1350.png" alt="Carrie Rathbun Hawks, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="carrie-rathbun-hawks-ig">Growth without boundaries is just burnout with better numbers.
+
+I&#x27;m on the panel “Money, Boundaries, and Running a Small Business for Sustainable Growth,” moderated by Paula Farmer.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code HAWKS27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="carrie-rathbun-hawks-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_ig-story_1080x1920.png" alt="Carrie Rathbun Hawks, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carrie-rathbun-hawks</span>Mention sticker @athena_international</p>
+<pre id="carrie-rathbun-hawks-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="carrie-rathbun-hawks-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_linkedin_1200x1500.png" alt="Carrie Rathbun Hawks, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="carrie-rathbun-hawks-li">Growing a business is hard. Growing it without burning out is harder.
+
+After three decades in public relations, and as a 2018 ATHENA International Leadership Award recipient, I&#x27;m joining Melanie Estes, Rachel B. Lee and Kurt Kwiatkowski, moderated by Paula Farmer, for Money, Boundaries, and Running a Small Business for Sustainable Growth. An honest conversation about pricing, protecting your time and building a business that lasts.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code HAWKS27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carrie-rathbun-hawks
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="carrie-rathbun-hawks-li">Copy text</button></div></article>
+</div></section><section class="spk" id="charlene-reynolds">
+<header class="spkhead"><div><p class="role">Panel Speaker</p><h3>Charlene Reynolds</h3><p class="sess">Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises</p></div>
+<div class="tags"><span class="code">REYNOLDS27</span><a href="charlene-reynolds/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="charlene-reynolds/charlene-reynolds_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="charlene-reynolds/charlene-reynolds_ig-post_1080x1350.png" alt="Charlene Reynolds, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="charlene-reynolds-ig">Four airport leaders. One question: how do you lead when everything moves at once?
+
+I&#x27;m on the keynote panel “Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises,” with Nicole Noll-Williams, Melissa Cooper and Dominique Ranieri.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code REYNOLDS27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="charlene-reynolds-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="charlene-reynolds/charlene-reynolds_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="charlene-reynolds/charlene-reynolds_ig-story_1080x1920.png" alt="Charlene Reynolds, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=charlene-reynolds</span>Mention sticker @athena_international</p>
+<pre id="charlene-reynolds-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="charlene-reynolds-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="charlene-reynolds/charlene-reynolds_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="charlene-reynolds/charlene-reynolds_linkedin_1200x1500.png" alt="Charlene Reynolds, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="charlene-reynolds-li">How do you lead when everything is moving at once?
+
+Directing John Wayne Airport means leading six divisions through constant change. On the keynote panel Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises, I&#x27;ll join Nicole Noll-Williams, Melissa Cooper and Dominique Ranieri for an honest conversation about courage, clarity and calm under pressure.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code REYNOLDS27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=charlene-reynolds
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="charlene-reynolds-li">Copy text</button></div></article>
+</div></section><section class="spk" id="dat-tran">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Dat Tran</h3><p class="sess">Human-Centered AI Leadership: Lead with Confidence into the Emerging Future</p></div>
+<div class="tags"><span class="code">TRAN27</span><a href="dat-tran/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="dat-tran/dat-tran_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="dat-tran/dat-tran_ig-post_1080x1350.png" alt="Dat Tran, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="dat-tran-ig">Stress isn&#x27;t your enemy. It&#x27;s evidence you&#x27;re built for something great.
+
+I&#x27;m co-leading the micro-lab “Human-Centered AI Leadership: Lead with Confidence into the Emerging Future,” with Isadora Maria and Dr. Moacir Antonelli Ponti.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code TRAN27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="dat-tran-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="dat-tran/dat-tran_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="dat-tran/dat-tran_ig-story_1080x1920.png" alt="Dat Tran, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dat-tran</span>Mention sticker @athena_international</p>
+<pre id="dat-tran-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="dat-tran-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="dat-tran/dat-tran_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="dat-tran/dat-tran_linkedin_1200x1500.png" alt="Dat Tran, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="dat-tran-li">In 2022, I burned out as a Microsoft global strategist. I refused to let stress win.
+
+That rebuild became the approach I now teach leaders who work under constant pressure. In the micro-lab Human-Centered AI Leadership: Lead with Confidence into the Emerging Future, I&#x27;ll join Isadora Maria and Dr. Moacir Antonelli Ponti to help you lead through change and uncertainty with confidence and composure.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code TRAN27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dat-tran
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="dat-tran-li">Copy text</button></div></article>
+</div></section><section class="spk" id="deb-hart">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Deb Hart</h3><p class="sess">Morning Wellness</p></div>
+<div class="tags"><span class="code">HART27</span><a href="deb-hart/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="deb-hart/deb-hart_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="deb-hart/deb-hart_ig-post_1080x1350.png" alt="Deb Hart, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="deb-hart-ig">I&#x27;ll be on the mic and on the mat in Los Angeles.
+
+I&#x27;m leading Morning Wellness with Carlene Kanellis, and I&#x27;m one of your emcees with Bobby Hoffman.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code HART27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="deb-hart-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="deb-hart/deb-hart_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="deb-hart/deb-hart_ig-story_1080x1920.png" alt="Deb Hart, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=deb-hart</span>Mention sticker @athena_international</p>
+<pre id="deb-hart-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="deb-hart-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="deb-hart/deb-hart_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="deb-hart/deb-hart_linkedin_1200x1500.png" alt="Deb Hart, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="deb-hart-li">Leadership performance starts with how you begin the day.
+
+As a radio and TV personality and certified wellness facilitator, I&#x27;ll co-lead the Morning Wellness sessions with Carlene Kanellis and join Bobby Hoffman as one of your emcees for the three days.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code HART27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=deb-hart
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="deb-hart-li">Copy text</button></div></article>
+</div></section><section class="spk" id="dominique-ranieri">
+<header class="spkhead"><div><p class="role">Panel Speaker</p><h3>Dominique Ranieri</h3><p class="sess">Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises</p></div>
+<div class="tags"><span class="code">RANIERI27</span><a href="dominique-ranieri/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="dominique-ranieri/dominique-ranieri_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="dominique-ranieri/dominique-ranieri_ig-post_1080x1350.png" alt="Dominique Ranieri, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="dominique-ranieri-ig">The first woman in 75 years to lead our airport. Here&#x27;s what turbulence taught me.
+
+I&#x27;m on the keynote panel “Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises,” with Nicole Noll-Williams, Melissa Cooper and Charlene Reynolds.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code RANIERI27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="dominique-ranieri-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="dominique-ranieri/dominique-ranieri_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="dominique-ranieri/dominique-ranieri_ig-story_1080x1920.png" alt="Dominique Ranieri, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dominique-ranieri</span>Mention sticker @athena_international</p>
+<pre id="dominique-ranieri-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="dominique-ranieri-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="dominique-ranieri/dominique-ranieri_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="dominique-ranieri/dominique-ranieri_linkedin_1200x1500.png" alt="Dominique Ranieri, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="dominique-ranieri-li">I moved from law to aviation in 2017. Five years later, I was leading an airport.
+
+As the first woman in 75 years to lead West Virginia International Yeager Airport, I&#x27;ve learned a lot about leading through change. On the keynote panel Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises, I&#x27;ll join Nicole Noll-Williams, Melissa Cooper and Charlene Reynolds to talk about leading when the pressure rises.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code RANIERI27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dominique-ranieri
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="dominique-ranieri-li">Copy text</button></div></article>
+</div></section><section class="spk" id="gavriella-schuster">
+<header class="spkhead"><div><p class="role">Keynote Speaker</p><h3>Gavriella Schuster</h3><p class="sess">From Ally to Architect: Building the Personal Board That Builds Your Career</p></div>
+<div class="tags"><span class="code">SCHUSTER27</span><a href="gavriella-schuster/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="gavriella-schuster/gavriella-schuster_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="gavriella-schuster/gavriella-schuster_ig-post_1080x1350.png" alt="Gavriella Schuster, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="gavriella-schuster-ig">Your career is too important to build alone.
+
+My keynote: “From Ally to Architect: Building the Personal Board That Builds Your Career.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code SCHUSTER27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="gavriella-schuster-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="gavriella-schuster/gavriella-schuster_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="gavriella-schuster/gavriella-schuster_ig-story_1080x1920.png" alt="Gavriella Schuster, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=gavriella-schuster</span>Mention sticker @athena_international</p>
+<pre id="gavriella-schuster-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="gavriella-schuster-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="gavriella-schuster/gavriella-schuster_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="gavriella-schuster/gavriella-schuster_linkedin_1200x1500.png" alt="Gavriella Schuster, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="gavriella-schuster-li">Who is on your personal board of directors?
+
+Twenty-five years at Microsoft and years of championing allyship in tech taught me that careers are built by the people around you. In my keynote, From Ally to Architect: Building the Personal Board That Builds Your Career, I&#x27;ll show you how to deliberately build the circle of mentors, sponsors and allies that moves you forward.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code SCHUSTER27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=gavriella-schuster
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="gavriella-schuster-li">Copy text</button></div></article>
+</div></section><section class="spk" id="heather-reaume">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Heather Reaume</h3><p class="sess">AI + Human Design for Conscious Leadership</p></div>
+<div class="tags"><span class="code">REAUME27</span><a href="heather-reaume/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="heather-reaume/heather-reaume_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="heather-reaume/heather-reaume_ig-post_1080x1350.png" alt="Heather Reaume, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="heather-reaume-ig">The best leadership starts with knowing who you are.
+
+My micro-lab: “AI + Human Design for Conscious Leadership.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code REAUME27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="heather-reaume-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="heather-reaume/heather-reaume_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="heather-reaume/heather-reaume_ig-story_1080x1920.png" alt="Heather Reaume, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=heather-reaume</span>Mention sticker @athena_international</p>
+<pre id="heather-reaume-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="heather-reaume-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="heather-reaume/heather-reaume_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="heather-reaume/heather-reaume_linkedin_1200x1500.png" alt="Heather Reaume, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="heather-reaume-li">You can&#x27;t lead from a self you haven&#x27;t met.
+
+I guide leaders into conscious, embodied leadership: meeting the truth of who they are and leading from it with courage, clarity and presence. In my micro-lab, AI + Human Design for Conscious Leadership, we&#x27;ll explore how to stay grounded in who you are as technology reshapes the way we work.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code REAUME27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=heather-reaume
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="heather-reaume-li">Copy text</button></div></article>
+</div></section><section class="spk" id="isadora-maria">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Isadora Maria</h3><p class="sess">Human-Centered AI Leadership: Lead with Confidence into the Emerging Future</p></div>
+<div class="tags"><span class="code">MENDES27</span><a href="isadora-maria/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="isadora-maria/isadora-maria_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_ig-post_1080x1350.png" alt="Isadora Maria, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="isadora-maria-ig">The future of work is still human. Let&#x27;s lead it that way.
+
+I&#x27;m co-leading the micro-lab “Human-Centered AI Leadership: Lead with Confidence into the Emerging Future,” with Dr. Moacir Antonelli Ponti and Dat Tran.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code MENDES27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="isadora-maria-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="isadora-maria/isadora-maria_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_ig-story_1080x1920.png" alt="Isadora Maria, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=isadora-maria</span>Mention sticker @athena_international</p>
+<pre id="isadora-maria-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="isadora-maria-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="isadora-maria/isadora-maria_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_linkedin_1200x1500.png" alt="Isadora Maria, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="isadora-maria-li">Technology opens doors when people lead it with intention.
+
+From public schools in rural Brazil to leadership roles in technology, nonprofit and creative industries, I&#x27;ve seen that firsthand. In the micro-lab Human-Centered AI Leadership: Lead with Confidence into the Emerging Future, I&#x27;ll work hands-on with Dr. Moacir Antonelli Ponti and Dat Tran to help you use AI with confidence, without losing the human side of leadership.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code MENDES27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=isadora-maria
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="isadora-maria-li">Copy text</button></div></article>
+</div></section><section class="spk" id="jc-ayers">
+<header class="spkhead"><div><p class="role">Keynote Speaker</p><h3>JC Ayers</h3><p class="sess">Career Success: What&#x27;s Stopping You?</p></div>
+<div class="tags"><span class="code">AYERS27</span><a href="jc-ayers/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="jc-ayers/jc-ayers_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="jc-ayers/jc-ayers_ig-post_1080x1350.png" alt="JC Ayers, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="jc-ayers-ig">What&#x27;s really standing between you and your next career move?
+
+My keynote: “Career Success: What&#x27;s Stopping You?”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code AYERS27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="jc-ayers-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="jc-ayers/jc-ayers_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="jc-ayers/jc-ayers_ig-story_1080x1920.png" alt="JC Ayers, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jc-ayers</span>Mention sticker @athena_international</p>
+<pre id="jc-ayers-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="jc-ayers-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="jc-ayers/jc-ayers_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="jc-ayers/jc-ayers_linkedin_1200x1500.png" alt="JC Ayers, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="jc-ayers-li">Most careers don&#x27;t stall for lack of talent.
+
+After 35+ years in HR, today leading people strategy across 11 resorts at Cherokee Nation Entertainment, I&#x27;ve watched talented people stall for reasons they could fix. In my keynote, Career Success: What&#x27;s Stopping You?, we&#x27;ll name those barriers and build a plan to move past them.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code AYERS27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jc-ayers
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="jc-ayers-li">Copy text</button></div></article>
+</div></section><section class="spk" id="jody-bishop-pompili">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Jody Bishop-Pompili</h3><p class="sess">Top Tier ATHENA Facilitator Skill Development</p></div>
+<div class="tags"><span class="code">POMPILI27</span><a href="jody-bishop-pompili/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="jody-bishop-pompili/jody-bishop-pompili_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="jody-bishop-pompili/jody-bishop-pompili_ig-post_1080x1350.png" alt="Jody Bishop-Pompili, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="jody-bishop-pompili-ig">Calling all ATHENA Certified Facilitators.
+
+I&#x27;m co-leading “Top Tier ATHENA Facilitator Skill Development” with Heather Reaume, a micro-lab for ATHENA Certified Facilitators.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code POMPILI27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="jody-bishop-pompili-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="jody-bishop-pompili/jody-bishop-pompili_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="jody-bishop-pompili/jody-bishop-pompili_ig-story_1080x1920.png" alt="Jody Bishop-Pompili, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jody-bishop-pompili</span>Mention sticker @athena_international</p>
+<pre id="jody-bishop-pompili-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="jody-bishop-pompili-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="jody-bishop-pompili/jody-bishop-pompili_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="jody-bishop-pompili/jody-bishop-pompili_linkedin_1200x1500.png" alt="Jody Bishop-Pompili, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="jody-bishop-pompili-li">Great facilitation is a craft. This micro-lab is for those ready to sharpen it.
+
+With 12+ years in talent management and organizational development, today at Fidelity Investments, I&#x27;m co-leading Top Tier ATHENA Facilitator Skill Development with Heather Reaume, a micro-lab for ATHENA Certified Facilitators ready to take their practice to the next level.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code POMPILI27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jody-bishop-pompili
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="jody-bishop-pompili-li">Copy text</button></div></article>
+</div></section><section class="spk" id="karen-bird">
+<header class="spkhead"><div><p class="role">Keynote Speaker</p><h3>Karen Bird</h3><p class="sess">Circles, Stories, and Shared Leadership: What Indigenous Traditions Teach Us About Leading Together</p></div>
+<div class="tags"><span class="code">BIRD27</span><a href="karen-bird/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="karen-bird/karen-bird_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_ig-post_1080x1350.png" alt="Karen Bird, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="karen-bird-ig">Some of the oldest leadership wisdom we have was built in circles.
+
+I&#x27;m giving the Closing Keynote: “Circles, Stories, and Shared Leadership: What Indigenous Traditions Teach Us About Leading Together.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code BIRD27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="karen-bird-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="karen-bird/karen-bird_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_ig-story_1080x1920.png" alt="Karen Bird, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karen-bird</span>Mention sticker @athena_international</p>
+<pre id="karen-bird-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="karen-bird-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="karen-bird/karen-bird_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_linkedin_1200x1500.png" alt="Karen Bird, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="karen-bird-li">Leadership doesn&#x27;t have to sit at the top of a pyramid. It can sit in a circle.
+
+As an Ojibwe leader and CEO of Batchewana First Nation, I lead in a tradition where decisions, stories and responsibility are shared. In the closing keynote, Circles, Stories, and Shared Leadership: What Indigenous Traditions Teach Us About Leading Together, I&#x27;ll share what those traditions can teach every leader about leading together.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code BIRD27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karen-bird
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="karen-bird-li">Copy text</button></div></article>
+</div></section><section class="spk" id="karol-pelletier">
+<header class="spkhead"><div><p class="role">Keynote Speaker</p><h3>Karol Pelletier</h3><p class="sess">Leadership Isn&#x27;t a Title: How to Influence at Any Level</p></div>
+<div class="tags"><span class="code">PELLETIER27</span><a href="karol-pelletier/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="karol-pelletier/karol-pelletier_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="karol-pelletier/karol-pelletier_ig-post_1080x1350.png" alt="Karol Pelletier, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="karol-pelletier-ig">Influence has nothing to do with your title.
+
+I&#x27;m giving the Opening Keynote: “Leadership Isn&#x27;t a Title: How to Influence at Any Level.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code PELLETIER27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="karol-pelletier-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="karol-pelletier/karol-pelletier_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="karol-pelletier/karol-pelletier_ig-story_1080x1920.png" alt="Karol Pelletier, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karol-pelletier</span>Mention sticker @athena_international</p>
+<pre id="karol-pelletier-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="karol-pelletier-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="karol-pelletier/karol-pelletier_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="karol-pelletier/karol-pelletier_linkedin_1200x1500.png" alt="Karol Pelletier, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="karol-pelletier-li">The most influential person in the room is rarely the one with the biggest title.
+
+After 25+ years leading people strategy and culture transformation, I&#x27;ve seen influence built at every level of an organization. In my opening keynote, Leadership Isn&#x27;t a Title: How to Influence at Any Level, I&#x27;ll share how to earn trust, move decisions and lead change wherever you sit on the org chart.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code PELLETIER27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karol-pelletier
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="karol-pelletier-li">Copy text</button></div></article>
+</div></section><section class="spk" id="kimberli-green">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Kimberli Green</h3><p class="sess">Fireside Chat with Linda Ackley-Eaker, the Sculptor Who Created the ATHENA Award</p></div>
+<div class="tags"><span class="code">GREEN27</span><a href="kimberli-green/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="kimberli-green/kimberli-green_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_ig-post_1080x1350.png" alt="Kimberli Green, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="kimberli-green-ig">The woman who sculpted the ATHENA award, live on stage.
+
+I&#x27;m opening the conference with our CEO Traci Costa, and on Friday I&#x27;m hosting a fireside chat with Linda Ackley-Eaker.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code GREEN27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="kimberli-green-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="kimberli-green/kimberli-green_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_ig-story_1080x1920.png" alt="Kimberli Green, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kimberli-green</span>Mention sticker @athena_international</p>
+<pre id="kimberli-green-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="kimberli-green-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="kimberli-green/kimberli-green_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_linkedin_1200x1500.png" alt="Kimberli Green, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="kimberli-green-li">More than 40 years ago, an artist in Michigan created the ATHENA award. In January, she&#x27;ll tell the story herself.
+
+As Chair of the ATHENA International Board, I&#x27;ll open the conference with our CEO Traci Costa. On Friday, I&#x27;ll host a fireside chat with Linda Ackley-Eaker, the sculptor who created the ATHENA award more than 40 years ago.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code GREEN27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kimberli-green
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="kimberli-green-li">Copy text</button></div></article>
+</div></section><section class="spk" id="kurt-kwiatkowski">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Kurt Kwiatkowski</h3><p class="sess">Chef&#x27;s Table: Leadership in the Heat of the Moment</p></div>
+<div class="tags"><span class="code">KWIATKOWSKI27</span><a href="kurt-kwiatkowski/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="kurt-kwiatkowski/kurt-kwiatkowski_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="kurt-kwiatkowski/kurt-kwiatkowski_ig-post_1080x1350.png" alt="Kurt Kwiatkowski, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="kurt-kwiatkowski-ig">A professional kitchen is the best leadership school I know.
+
+My micro-lab: “Chef&#x27;s Table: Leadership in the Heat of the Moment.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code KWIATKOWSKI27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="kurt-kwiatkowski-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="kurt-kwiatkowski/kurt-kwiatkowski_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="kurt-kwiatkowski/kurt-kwiatkowski_ig-story_1080x1920.png" alt="Kurt Kwiatkowski, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kurt-kwiatkowski</span>Mention sticker @athena_international</p>
+<pre id="kurt-kwiatkowski-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="kurt-kwiatkowski-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="kurt-kwiatkowski/kurt-kwiatkowski_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="kurt-kwiatkowski/kurt-kwiatkowski_linkedin_1200x1500.png" alt="Kurt Kwiatkowski, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="kurt-kwiatkowski-li">Nearly 40,000 meals a day teaches you a lot about leading under pressure.
+
+That was the scale of my work as Senior Executive Chef at Michigan State University, and today I run One North Kitchen &amp; Bar. In my micro-lab, Chef&#x27;s Table: Leadership in the Heat of the Moment, we&#x27;ll take what kitchens teach about pressure, teamwork and fast decisions and turn it into leadership you can use anywhere.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code KWIATKOWSKI27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kurt-kwiatkowski
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="kurt-kwiatkowski-li">Copy text</button></div></article>
+</div></section><section class="spk" id="linda-ackley-eaker">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Linda Ackley-Eaker</h3><p class="sess">Fireside Chat: The Sculptor Who Created the ATHENA Award, with Board Chair Kimberli Green</p></div>
+<div class="tags"><span class="code none">No personal code</span><a href="linda-ackley-eaker/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="linda-ackley-eaker/linda-ackley-eaker_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="linda-ackley-eaker/linda-ackley-eaker_ig-post_1080x1350.png" alt="Linda Ackley-Eaker, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="linda-ackley-eaker-ig">In 1982, I sculpted the first ATHENA award. Let&#x27;s talk about it.
+
+On Friday I&#x27;m sitting down with Board Chair Kimberli Green for a fireside chat about the story behind the award.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="linda-ackley-eaker-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="linda-ackley-eaker/linda-ackley-eaker_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="linda-ackley-eaker/linda-ackley-eaker_ig-story_1080x1920.png" alt="Linda Ackley-Eaker, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=linda-ackley-eaker</span>Mention sticker @athena_international</p>
+<pre id="linda-ackley-eaker-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="linda-ackley-eaker-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="linda-ackley-eaker/linda-ackley-eaker_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="linda-ackley-eaker/linda-ackley-eaker_linkedin_1200x1500.png" alt="Linda Ackley-Eaker, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="linda-ackley-eaker-li">In 1982, I designed the original ATHENA sculpture.
+
+For decades, my foundry hand-cast the bronze ATHENA awards using the lost-wax method. On Friday, I&#x27;ll sit down with Board Chair Kimberli Green for a fireside chat about the story behind the award, and the women it has honored since.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=linda-ackley-eaker
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="linda-ackley-eaker-li">Copy text</button></div></article>
+</div></section><section class="spk" id="melissa-cooper">
+<header class="spkhead"><div><p class="role">Panel Speaker</p><h3>Melissa Cooper</h3><p class="sess">Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises</p></div>
+<div class="tags"><span class="code">COOPER27</span><a href="melissa-cooper/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="melissa-cooper/melissa-cooper_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="melissa-cooper/melissa-cooper_ig-post_1080x1350.png" alt="Melissa Cooper, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="melissa-cooper-ig">Pilots train for turbulence. Leaders should too.
+
+I&#x27;m on the keynote panel “Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises,” with Nicole Noll-Williams, Charlene Reynolds and Dominique Ranieri.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code COOPER27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="melissa-cooper-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="melissa-cooper/melissa-cooper_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="melissa-cooper/melissa-cooper_ig-story_1080x1920.png" alt="Melissa Cooper, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=melissa-cooper</span>Mention sticker @athena_international</p>
+<pre id="melissa-cooper-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="melissa-cooper-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="melissa-cooper/melissa-cooper_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="melissa-cooper/melissa-cooper_linkedin_1200x1500.png" alt="Melissa Cooper, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="melissa-cooper-li">Pilots train for turbulence long before they meet it. Leaders can do the same.
+
+As Director of Aviation for Kansas City International Airport and a commercial pilot, I work where safety, pressure and public trust meet every day. On the keynote panel Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises, I&#x27;ll join Nicole Noll-Williams, Charlene Reynolds and Dominique Ranieri to share how we stay clear and calm when it matters most.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code COOPER27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=melissa-cooper
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="melissa-cooper-li">Copy text</button></div></article>
+</div></section><section class="spk" id="michelle-massey">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Michelle Massey</h3><p class="sess">Living &amp; Leading with Purpose</p></div>
+<div class="tags"><span class="code">MASSEY27</span><a href="michelle-massey/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="michelle-massey/michelle-massey_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_ig-post_1080x1350.png" alt="Michelle Massey, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="michelle-massey-ig">Purpose isn&#x27;t a poster on the wall. It&#x27;s how you decide.
+
+My micro-lab: “Living &amp; Leading with Purpose.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code MASSEY27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="michelle-massey-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="michelle-massey/michelle-massey_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_ig-story_1080x1920.png" alt="Michelle Massey, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=michelle-massey</span>Mention sticker @athena_international</p>
+<pre id="michelle-massey-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="michelle-massey-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="michelle-massey/michelle-massey_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_linkedin_1200x1500.png" alt="Michelle Massey, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="michelle-massey-li">Purpose shows up in your calendar, not on your wall.
+
+As a community outreach and customer experience executive, ATHENA board treasurer and founder of M2 Speaks, I&#x27;ve built my career around purpose. In my micro-lab, Living &amp; Leading with Purpose, you&#x27;ll define what drives you and turn it into how you lead every day.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code MASSEY27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=michelle-massey
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="michelle-massey-li">Copy text</button></div></article>
+</div></section><section class="spk" id="moacir-antonelli-ponti">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Dr. Moacir Antonelli Ponti</h3><p class="sess">Human-Centered AI Leadership: Lead with Confidence into the Emerging Future</p></div>
+<div class="tags"><span class="code">PONTI27</span><a href="moacir-antonelli-ponti/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="moacir-antonelli-ponti/moacir-antonelli-ponti_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="moacir-antonelli-ponti/moacir-antonelli-ponti_ig-post_1080x1350.png" alt="Dr. Moacir Antonelli Ponti, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="moacir-antonelli-ponti-ig">Better decisions, faster innovation, people at the center.
+
+I&#x27;m co-leading the micro-lab “Human-Centered AI Leadership: Lead with Confidence into the Emerging Future,” with Isadora Maria and Dat Tran.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code PONTI27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="moacir-antonelli-ponti-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="moacir-antonelli-ponti/moacir-antonelli-ponti_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="moacir-antonelli-ponti/moacir-antonelli-ponti_ig-story_1080x1920.png" alt="Dr. Moacir Antonelli Ponti, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=moacir-antonelli-ponti</span>Mention sticker @athena_international</p>
+<pre id="moacir-antonelli-ponti-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="moacir-antonelli-ponti-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="moacir-antonelli-ponti/moacir-antonelli-ponti_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="moacir-antonelli-ponti/moacir-antonelli-ponti_linkedin_1200x1500.png" alt="Dr. Moacir Antonelli Ponti, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="moacir-antonelli-ponti-li">The real advantage isn&#x27;t the model. It&#x27;s how leaders put it to work.
+
+I lead strategy and research in foundation models and AI agents at Mercado Livre and teach computer science at the University of São Paulo. In the micro-lab Human-Centered AI Leadership: Lead with Confidence into the Emerging Future, I&#x27;ll join Isadora Maria and Dat Tran to turn AI into practical advantage for your team, with hands-on work you can use the following week.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code PONTI27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=moacir-antonelli-ponti
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="moacir-antonelli-ponti-li">Copy text</button></div></article>
+</div></section><section class="spk" id="nicole-noll-williams">
+<header class="spkhead"><div><p class="role">Panel Speaker</p><h3>Nicole Noll-Williams</h3><p class="sess">Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises</p></div>
+<div class="tags"><span class="code">NOLLWILLIAMS27</span><a href="nicole-noll-williams/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="nicole-noll-williams/nicole-noll-williams_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="nicole-noll-williams/nicole-noll-williams_ig-post_1080x1350.png" alt="Nicole Noll-Williams, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="nicole-noll-williams-ig">Calm is a leadership skill, and you can train it.
+
+I&#x27;m on the keynote panel “Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises,” with Melissa Cooper, Charlene Reynolds and Dominique Ranieri.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code NOLLWILLIAMS27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="nicole-noll-williams-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="nicole-noll-williams/nicole-noll-williams_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="nicole-noll-williams/nicole-noll-williams_ig-story_1080x1920.png" alt="Nicole Noll-Williams, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=nicole-noll-williams</span>Mention sticker @athena_international</p>
+<pre id="nicole-noll-williams-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="nicole-noll-williams-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="nicole-noll-williams/nicole-noll-williams_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="nicole-noll-williams/nicole-noll-williams_linkedin_1200x1500.png" alt="Nicole Noll-Williams, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="nicole-noll-williams-li">In aviation, turbulence isn&#x27;t a metaphor.
+
+After 25+ years leading complex, high-stakes operations, today as President and CEO of the Capital Region Airport Authority, I&#x27;ve learned that calm is something you practice. On the keynote panel Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises, I&#x27;ll join Melissa Cooper, Charlene Reynolds and Dominique Ranieri, four women leading airports, to talk about how we lead when the pressure rises.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code NOLLWILLIAMS27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=nicole-noll-williams
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="nicole-noll-williams-li">Copy text</button></div></article>
+</div></section><section class="spk" id="paula-farmer">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Paula Farmer</h3><p class="sess">The Illusion of Holding It All Together</p></div>
+<div class="tags"><span class="code">FARMER27</span><a href="paula-farmer/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="paula-farmer/paula-farmer_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_ig-post_1080x1350.png" alt="Paula Farmer, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="paula-farmer-ig">Looking like you have it all together is exhausting. Let&#x27;s talk about it.
+
+My micro-lab: “The Illusion of Holding It All Together.” I&#x27;m also moderating the panel “Money, Boundaries, and Running a Small Business for Sustainable Growth.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code FARMER27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="paula-farmer-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="paula-farmer/paula-farmer_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_ig-story_1080x1920.png" alt="Paula Farmer, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=paula-farmer</span>Mention sticker @athena_international</p>
+<pre id="paula-farmer-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="paula-farmer-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="paula-farmer/paula-farmer_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_linkedin_1200x1500.png" alt="Paula Farmer, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="paula-farmer-li">High achievers are often the ones carrying the most, alone.
+
+In more than twenty years coaching leaders and teams, I&#x27;ve seen that pattern again and again. In my micro-lab, The Illusion of Holding It All Together, we&#x27;ll set that weight down and build a more honest, sustainable way to lead. I&#x27;ll also moderate the panel Money, Boundaries, and Running a Small Business for Sustainable Growth.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code FARMER27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=paula-farmer
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="paula-farmer-li">Copy text</button></div></article>
+</div></section><section class="spk" id="rachel-b-lee">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Rachel B. Lee</h3><p class="sess">YOUmanize™ Your Brand: Building Trust When AI Makes the First Impression</p></div>
+<div class="tags"><span class="code">RACHELLEE27</span><a href="rachel-b-lee/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="rachel-b-lee/rachel-b-lee_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="rachel-b-lee/rachel-b-lee_ig-post_1080x1350.png" alt="Rachel B. Lee, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="rachel-b-lee-ig">Before anyone meets you, an algorithm already has.
+
+My micro-lab: “YOUmanize™ Your Brand: Building Trust When AI Makes the First Impression.”
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code RACHELLEE27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="rachel-b-lee-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="rachel-b-lee/rachel-b-lee_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="rachel-b-lee/rachel-b-lee_ig-story_1080x1920.png" alt="Rachel B. Lee, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=rachel-b-lee</span>Mention sticker @athena_international</p>
+<pre id="rachel-b-lee-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="rachel-b-lee-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="rachel-b-lee/rachel-b-lee_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="rachel-b-lee/rachel-b-lee_linkedin_1200x1500.png" alt="Rachel B. Lee, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="rachel-b-lee-li">Your first impression now happens before you walk into the room.
+
+As a LinkedIn Top Voice who led brand strategy at Microsoft and Gartner, I help leaders show up online as who they really are. In my micro-lab, YOUmanize™ Your Brand: Building Trust When AI Makes the First Impression, you&#x27;ll build a personal brand that earns trust before the first hello.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code RACHELLEE27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=rachel-b-lee
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="rachel-b-lee-li">Copy text</button></div></article>
+</div></section><section class="spk" id="traci-costa">
+<header class="spkhead"><div><p class="role">Speaker</p><h3>Traci Costa</h3><p class="sess">Conference Welcome, with Board Chair Kimberli Green</p></div>
+<div class="tags"><span class="code">COSTA27</span><a href="traci-costa/captions.txt" target="_blank" rel="noopener">captions.txt</a></div></header>
+<div class="chs">
+<article class="ch">
+<a class="shot" href="traci-costa/traci-costa_ig-post_1080x1350.png" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_ig-post_1080x1350.png" alt="Traci Costa, Instagram Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4><p class="meta">Invite @athena_international as a collaborator.</p>
+<pre id="traci-costa-ig">Three days of leaders building what comes next. I can&#x27;t wait to welcome you.
+
+I&#x27;m opening the conference with our Board Chair Kimberli Green.
+
+Join me at the ATHENA International Conference, January 28-30, 2027, at the Hilton Los Angeles/Universal City. Three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
+
+Early Bird pricing from $545 ends November 15. Use my code COSTA27 for 20% off.
+Tickets: conference.athenainternational.org/c
+
+@athena_international
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre>
+<button type="button" class="copy" data-for="traci-costa-ig">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="traci-costa/traci-costa_ig-story_1080x1920.png" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_ig-story_1080x1920.png" alt="Traci Costa, Instagram Story" loading="lazy" width="1080" height="1920"></a>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/c/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=traci-costa</span>Mention sticker @athena_international</p>
+<pre id="traci-costa-st">Who&#x27;s coming with me?</pre>
+<button type="button" class="copy" data-for="traci-costa-st">Copy text</button></div></article>
+<article class="ch">
+<a class="shot" href="traci-costa/traci-costa_linkedin_1200x1500.png" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_linkedin_1200x1500.png" alt="Traci Costa, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
+<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
+<pre id="traci-costa-li">Three days in Los Angeles to build what comes next, together.
+
+As President and CEO of ATHENA International, I&#x27;ll open the 2027 conference alongside our Board Chair Kimberli Green. Three days of keynotes, hands-on micro-labs and real connection, closing with the ATHENA Awards Celebration honoring Dr. Ruthie Bolton.
+
+ATHENA International Conference 2027
+January 28-30, 2027 · Hilton Los Angeles/Universal City
+
+Early Bird pricing from $545 ends November 15. Use my code COSTA27 for 20% off at checkout.
+https://conference.athenainternational.org/c/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=speaker_kit_2027&amp;utm_content=traci-costa
+
+#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
+<button type="button" class="copy" data-for="traci-costa-li">Copy text</button></div></article>
+</div></section>
+
+<footer><span class="ls">Lua Sol Co.</span><span>Prepared for ATHENA International · Conference January 28-30, 2027</span></footer>
+</div>
+<script>
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.copy'); if(!b) return;
+  var pre=document.getElementById(b.dataset.for), t=pre.textContent;
+  function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},1600)}
+  function sel(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Copy'}
+  try{navigator.clipboard.writeText(t).then(ok,sel)}catch(err){sel()}
+});
+</script></body>
+</html>
