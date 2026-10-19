@@ -7,22 +7,23 @@
 <title>ATHENA 2027 Social Kit</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;0,700;1,600;1,700&display=swap">
 <style>
 /* Layout: coluna editorial larga, muito espaço em branco; cada speaker é uma folha com as três peças lado a lado */
 :root{
-  /* paleta LUASOL (identidade/paleta/paleta-luasol.json), visual escuro único em burgundy */
-  --sand:#2D0007;      /* bg: burgundy 950 */
-  --paper:#4A0110;     /* surface: burgundy 900 */
-  --wash:#1C0406;      /* well: neutral 975 (caixas de texto) */
-  --line:#800022;      /* linhas: burgundy 800, decorativo */
-  --ink:#FFF4F4;       /* texto: neutral 50, 17.5:1 no bg */
-  --muted:#FFC7C8;     /* texto secundário: burgundy 200, 10.9:1 no surface */
-  --terra:#FFB400;     /* acento: gold 300, 9:1 no surface */
-  --sage:#FECF84;      /* selo aprovado: gold 200 */
-  --eyebrow:#FCC1F5;   /* rótulos: magenta 200, 10.8:1 no surface */
-  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --text:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* marca ATHENA: Clients/athena-international/assets/brandbook/paleta/ (papeis-kit.json), fundo Inclusive Blue como as seções escuras da landing */
+  --sand:#0C2E40;      /* bg: Inclusive Blue (blue 900) */
+  --paper:#203E50;     /* surface: blue 800 */
+  --wash:#001624;      /* well: blue 950 (caixas de texto) */
+  --line:#A4853E;      /* linhas: Iconic Bronze, 3.2:1 */
+  --ink:#FEFFF8;       /* texto: Cream, 14.1:1 no bg */
+  --muted:#DAE0DC;     /* texto secundário: creme de texto da marca, 8.4:1 na surface */
+  --terra:#D6BA80;     /* acento: bronze 300, 6:1 na surface */
+  --sage:#EED59E;      /* selo aprovado: bronze 200 */
+  --eyebrow:#FFA569;   /* rótulos: orange 300, 5.8:1 na surface */
+  --cta:#FF8200;       /* botão principal: Orange da marca, texto blue 900 5.7:1 */
+  --display:"Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --text:Poppins, system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -35,7 +36,7 @@ h1 em{font-style:italic;color:var(--terra)}
 .lead{max-width:62ch;color:var(--muted);font-size:17px;margin:0}
 h2{font:600 30px/1.15 var(--display);margin:0 0 14px}
 .block{margin-top:56px}
-.tbl{overflow-x:auto;border-top:1px solid var(--ink)}
+.tbl{overflow-x:auto;border-top:1px solid var(--line)}
 table{border-collapse:collapse;width:100%;min-width:640px}
 th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
@@ -73,7 +74,7 @@ pre{margin:0;white-space:pre-wrap;word-break:break-word;font:13px/1.55 var(--tex
 .copy:hover{background:var(--terra)}.copy:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
 .navlabel{margin:22px 0 0;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--eyebrow)}
 .navlabel+nav{margin-top:10px}
-h2.group{font:600 clamp(34px,4.4vw,46px)/1.1 var(--display);margin:72px 0 0;padding-top:28px;border-top:1px solid var(--ink)}
+h2.group{font:600 clamp(34px,4.4vw,46px)/1.1 var(--display);margin:72px 0 0;padding-top:28px;border-top:2px solid var(--line)}
 .grouplead{margin:10px 0 0;color:var(--muted);max-width:70ch}
 .slides{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;margin-bottom:22px}
 .slideth{display:block;min-width:0;border-radius:6px;overflow:hidden;background:var(--wash);border:1px solid var(--line)}
@@ -81,7 +82,7 @@ h2.group{font:600 clamp(34px,4.4vw,46px)/1.1 var(--display);margin:72px 0 0;padd
 .slideth:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
 @media (max-width:700px){.slides{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .chs.two{grid-template-columns:repeat(2,minmax(0,1fr))}
-.req{font:600 13px var(--text);color:var(--sand)!important;background:var(--terra);border-radius:999px;padding:7px 14px;text-decoration:none}
+.req{font:600 13px var(--text);color:var(--sand)!important;background:var(--cta);border-radius:999px;padding:7px 14px;text-decoration:none}
 .req:hover,.req:focus-visible{background:var(--ink)}
 .ok{font-size:12px;font-weight:600;color:var(--sage);border:1px solid var(--sage);border-radius:999px;padding:4px 10px}
 .fields{display:grid;gap:10px}
@@ -98,7 +99,7 @@ h2.group{font:600 clamp(34px,4.4vw,46px)/1.1 var(--display);margin:72px 0 0;padd
 .tip{margin:22px 0 0;padding:16px 20px;background:var(--wash);border-radius:14px;max-width:80ch}
 @media (max-width:760px){.steps{grid-template-columns:1fr}}
 .totop{margin:28px 0 0}
-.totop a{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--text);color:var(--sand);background:var(--ink);border-radius:999px;padding:12px 22px;text-decoration:none}
+.totop a{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--text);color:var(--sand);background:var(--cta);border-radius:999px;padding:12px 22px;text-decoration:none}
 .totop a span{font-size:18px}
 .totop a:hover,.totop a:focus-visible{background:var(--terra)}
 #find{scroll-margin-top:16px}
