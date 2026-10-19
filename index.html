@@ -72,6 +72,22 @@ h2.group{font:600 clamp(34px,4.4vw,46px)/1.1 var(--display);margin:72px 0 0;padd
 .slideth:focus-visible{outline:2px solid var(--terra);outline-offset:2px}
 @media (max-width:700px){.slides{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .chs.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.req{font:600 13px var(--text);color:var(--sand)!important;background:var(--terra);border-radius:999px;padding:7px 14px;text-decoration:none}
+.req:hover,.req:focus-visible{background:var(--ink)}
+.ok{font-size:12px;font-weight:600;color:var(--sage);border:1px solid var(--sage);border-radius:999px;padding:4px 10px}
+.fields{display:grid;gap:10px}
+.field{display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 10px;background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.flabel{grid-column:1/-1;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.fval{min-width:0;font:13px/1.45 var(--text);color:var(--ink);word-break:break-all;background:none}
+.copy.small{padding:7px 14px;font-size:12px;white-space:nowrap}
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}
+.step{background:var(--paper);border-radius:18px;padding:24px 26px;min-width:0}
+.step h3{font:600 26px/1.15 var(--display);margin:0}
+.step .dim{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.step ol{margin:14px 0 0;padding-left:20px;display:grid;gap:8px}
+.step b{color:var(--terra);font-weight:600}
+.tip{margin:22px 0 0;padding:16px 20px;background:var(--wash);border-radius:14px;max-width:80ch}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
 footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:var(--muted);font-size:13px}
 footer .ls{font:500 20px var(--display);color:var(--ink)}
 @media (max-width:900px){.chs,.chs.two{grid-template-columns:1fr}.shot{max-width:420px}}
@@ -83,25 +99,12 @@ footer .ls{font:500 20px var(--display);color:var(--ink)}
 <header>
 <p class="eyebrow">LUASOL Collective for ATHENA International</p>
 <h1>ATHENA 2027 <em>Social Kit</em></h1>
-<p class="lead">Ready-to-post images and text for speakers, board members and ATHENA's own channels: an Instagram post, an Instagram Story and a LinkedIn post for each, with the text for every channel. Open an image to save it full size, or use the captions file in each folder.</p>
+<p class="lead">Your ready-to-post kit for ATHENA 2027: an Instagram post, an Instagram Story and a LinkedIn post, each with its text. Find your name below. <a href="#how-to">How to post your kit</a></p>
 </header>
 
-<section class="block" aria-labelledby="bom">
-<h2 id="bom">Bill of materials</h2>
-<div class="tbl"><table>
-<tr><th>Channel</th><th>Size (px)</th><th>File</th><th>Text</th><th>Link</th></tr>
-<tr><td>Instagram Post</td><td>1080 × 1350 (4:5)</td><td>slug_ig-post_1080x1350.png</td><td>Caption: hook, session, event, Early Bird offer, personal code, @athena_international, hashtags</td><td>Typed in the caption, tracked link for the bio</td></tr>
-<tr><td>Instagram Story</td><td>1080 × 1920 (9:16)</td><td>slug_ig-story_1080x1920.png</td><td>Link sticker, mention sticker, one optional line</td><td>Link sticker with tracking</td></tr>
-<tr><td>LinkedIn Post</td><td>1200 × 1500 (4:5)</td><td>slug_linkedin_1200x1500.png</td><td>Post: hook, short story, event, offer, personal code, hashtags</td><td>Clickable, with tracking</td></tr>
-</table></div>
-<p class="counts"><span><b>26</b>speakers</span><span><b>11</b>board members</span><span><b>111</b>personal images</span><span><b>3</b>channels</span></p>
-<div class="note">
-<p><b>Before sending:</b> the personal codes (20% off General Admission and VIP) must be live in Zeffy, and each speaker should approve the text written in their voice.</p>
-<p>Every link carries <code>utm_campaign=speaker_kit_2027</code> and the speaker in <code>utm_content</code>, so visits show per speaker and per channel. The code shows the sales.</p>
-</div>
+<section class="block" aria-label="Find your kit">
 <p class="navlabel">Speakers</p><nav aria-label="Speakers"><a href="#amy-blasen">Dr. Amy Blasen</a><a href="#amy-bonomi">Dr. Amy Bonomi</a><a href="#bobby-hoffman">Bobby Hoffman</a><a href="#carlene-kanellis">Carlene Kanellis</a><a href="#carrie-rathbun-hawks">Carrie Rathbun Hawks</a><a href="#charlene-reynolds">Charlene Reynolds</a><a href="#dat-tran">Dat Tran</a><a href="#deb-hart">Deb Hart</a><a href="#dominique-ranieri">Dominique Ranieri</a><a href="#gavriella-schuster">Gavriella Schuster</a><a href="#heather-reaume">Heather Reaume</a><a href="#isadora-maria">Isadora Maria</a><a href="#jc-ayers">JC Ayers</a><a href="#jody-bishop-pompili">Jody Bishop-Pompili</a><a href="#karen-bird">Karen Bird</a><a href="#karol-pelletier">Karol Pelletier</a><a href="#kimberli-green">Kimberli Green</a><a href="#kurt-kwiatkowski">Kurt Kwiatkowski</a><a href="#linda-ackley-eaker">Linda Ackley-Eaker</a><a href="#melissa-cooper">Melissa Cooper</a><a href="#michelle-massey">Michelle Massey</a><a href="#moacir-antonelli-ponti">Dr. Moacir Antonelli Ponti</a><a href="#nicole-noll-williams">Nicole Noll-Williams</a><a href="#paula-farmer">Paula Farmer</a><a href="#rachel-b-lee">Rachel B. Lee</a><a href="#traci-costa">Traci Costa</a></nav>
 <p class="navlabel">Board of Directors</p><nav aria-label="Board of Directors"><a href="#board-ann-playter">Ann Playter</a><a href="#board-carrie-rathbun-hawks">Carrie Rathbun Hawks</a><a href="#board-isadora-maria">Isadora Maria</a><a href="#board-karen-bird">Karen Bird</a><a href="#board-kimberley-bates">Kimberley Bates</a><a href="#board-kimberli-green">Kimberli Green</a><a href="#board-michelle-massey">Michelle Massey</a><a href="#board-nicole-newman-enslein">Nicole Newman Enslein</a><a href="#board-paula-farmer">Paula Farmer</a><a href="#board-sandra-corey-knight">Sandra Corey-Knight, J.D.</a><a href="#board-traci-costa">Traci Costa</a></nav>
-<p class="navlabel">ATHENA channels and attendees</p><nav aria-label="Conference posts"><a href="#ruthie-bolton">Dr. Ruthie Bolton, ATHENA Global Award recipient</a><a href="#painel-turbulence">Keynote Panel: Leading Through Turbulence</a><a href="#attendee-join-me">&quot;Join me&quot; template for attendees</a><a href="#carrossel-walk-away">Carousel: What you&#x27;ll walk away with</a><a href="#carrossel-experience">Carousel: Not a lineup of talks</a></nav>
 </section>
 
 <h2 class="group" id="speakers">Speakers</h2>
@@ -126,9 +129,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="amy-blasen-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="amy-blasen/amy-blasen_ig-story_1080x1920.png?v=43b51e10" target="_blank" rel="noopener"><img src="amy-blasen/amy-blasen_ig-story_1080x1920.png?v=43b51e10" alt="Dr. Amy Blasen, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-blasen</span>Mention sticker @athena_international</p>
-<pre id="amy-blasen-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="amy-blasen-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="amy-blasen-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-blasen</code><button type="button" class="copy small" data-for="amy-blasen-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="amy-blasen-st-text">Get your pass</code><button type="button" class="copy small" data-for="amy-blasen-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="amy-blasen-st-mention">@athena_international</code><button type="button" class="copy small" data-for="amy-blasen-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="amy-blasen/amy-blasen_linkedin_1200x1500.png?v=91a1ab94" target="_blank" rel="noopener"><img src="amy-blasen/amy-blasen_linkedin_1200x1500.png?v=91a1ab94" alt="Dr. Amy Blasen, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -165,9 +168,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="amy-bonomi-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="amy-bonomi/amy-bonomi_ig-story_1080x1920.png?v=7213e05a" target="_blank" rel="noopener"><img src="amy-bonomi/amy-bonomi_ig-story_1080x1920.png?v=7213e05a" alt="Dr. Amy Bonomi, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-bonomi</span>Mention sticker @athena_international</p>
-<pre id="amy-bonomi-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="amy-bonomi-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="amy-bonomi-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=amy-bonomi</code><button type="button" class="copy small" data-for="amy-bonomi-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="amy-bonomi-st-text">Get your pass</code><button type="button" class="copy small" data-for="amy-bonomi-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="amy-bonomi-st-mention">@athena_international</code><button type="button" class="copy small" data-for="amy-bonomi-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="amy-bonomi/amy-bonomi_linkedin_1200x1500.png?v=3a0b56fd" target="_blank" rel="noopener"><img src="amy-bonomi/amy-bonomi_linkedin_1200x1500.png?v=3a0b56fd" alt="Dr. Amy Bonomi, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -204,9 +207,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="bobby-hoffman-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="bobby-hoffman/bobby-hoffman_ig-story_1080x1920.png?v=c7f48ed3" target="_blank" rel="noopener"><img src="bobby-hoffman/bobby-hoffman_ig-story_1080x1920.png?v=c7f48ed3" alt="Bobby Hoffman, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=bobby-hoffman</span>Mention sticker @athena_international</p>
-<pre id="bobby-hoffman-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="bobby-hoffman-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="bobby-hoffman-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=bobby-hoffman</code><button type="button" class="copy small" data-for="bobby-hoffman-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="bobby-hoffman-st-text">Get your pass</code><button type="button" class="copy small" data-for="bobby-hoffman-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="bobby-hoffman-st-mention">@athena_international</code><button type="button" class="copy small" data-for="bobby-hoffman-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="bobby-hoffman/bobby-hoffman_linkedin_1200x1500.png?v=4d7fdd25" target="_blank" rel="noopener"><img src="bobby-hoffman/bobby-hoffman_linkedin_1200x1500.png?v=4d7fdd25" alt="Bobby Hoffman, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -243,9 +246,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="carlene-kanellis-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="carlene-kanellis/carlene-kanellis_ig-story_1080x1920.png?v=28c6c0fa" target="_blank" rel="noopener"><img src="carlene-kanellis/carlene-kanellis_ig-story_1080x1920.png?v=28c6c0fa" alt="Carlene Kanellis, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carlene-kanellis</span>Mention sticker @athena_international</p>
-<pre id="carlene-kanellis-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="carlene-kanellis-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="carlene-kanellis-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carlene-kanellis</code><button type="button" class="copy small" data-for="carlene-kanellis-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="carlene-kanellis-st-text">Get your pass</code><button type="button" class="copy small" data-for="carlene-kanellis-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="carlene-kanellis-st-mention">@athena_international</code><button type="button" class="copy small" data-for="carlene-kanellis-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="carlene-kanellis/carlene-kanellis_linkedin_1200x1500.png?v=442cfb4f" target="_blank" rel="noopener"><img src="carlene-kanellis/carlene-kanellis_linkedin_1200x1500.png?v=442cfb4f" alt="Carlene Kanellis, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -282,9 +285,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="carrie-rathbun-hawks-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_ig-story_1080x1920.png?v=44ceeace" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_ig-story_1080x1920.png?v=44ceeace" alt="Carrie Rathbun Hawks, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carrie-rathbun-hawks</span>Mention sticker @athena_international</p>
-<pre id="carrie-rathbun-hawks-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="carrie-rathbun-hawks-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="carrie-rathbun-hawks-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=carrie-rathbun-hawks</code><button type="button" class="copy small" data-for="carrie-rathbun-hawks-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="carrie-rathbun-hawks-st-text">Get your pass</code><button type="button" class="copy small" data-for="carrie-rathbun-hawks-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="carrie-rathbun-hawks-st-mention">@athena_international</code><button type="button" class="copy small" data-for="carrie-rathbun-hawks-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_linkedin_1200x1500.png?v=3834cd48" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_linkedin_1200x1500.png?v=3834cd48" alt="Carrie Rathbun Hawks, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -321,9 +324,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="charlene-reynolds-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="charlene-reynolds/charlene-reynolds_ig-story_1080x1920.png?v=dd183a36" target="_blank" rel="noopener"><img src="charlene-reynolds/charlene-reynolds_ig-story_1080x1920.png?v=dd183a36" alt="Charlene Reynolds, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=charlene-reynolds</span>Mention sticker @athena_international</p>
-<pre id="charlene-reynolds-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="charlene-reynolds-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="charlene-reynolds-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=charlene-reynolds</code><button type="button" class="copy small" data-for="charlene-reynolds-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="charlene-reynolds-st-text">Get your pass</code><button type="button" class="copy small" data-for="charlene-reynolds-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="charlene-reynolds-st-mention">@athena_international</code><button type="button" class="copy small" data-for="charlene-reynolds-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="charlene-reynolds/charlene-reynolds_linkedin_1200x1500.png?v=22f3fa9d" target="_blank" rel="noopener"><img src="charlene-reynolds/charlene-reynolds_linkedin_1200x1500.png?v=22f3fa9d" alt="Charlene Reynolds, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -360,9 +363,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="dat-tran-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="dat-tran/dat-tran_ig-story_1080x1920.png?v=81db6916" target="_blank" rel="noopener"><img src="dat-tran/dat-tran_ig-story_1080x1920.png?v=81db6916" alt="Dat Tran, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dat-tran</span>Mention sticker @athena_international</p>
-<pre id="dat-tran-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="dat-tran-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="dat-tran-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dat-tran</code><button type="button" class="copy small" data-for="dat-tran-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="dat-tran-st-text">Get your pass</code><button type="button" class="copy small" data-for="dat-tran-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="dat-tran-st-mention">@athena_international</code><button type="button" class="copy small" data-for="dat-tran-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="dat-tran/dat-tran_linkedin_1200x1500.png?v=ca14d11a" target="_blank" rel="noopener"><img src="dat-tran/dat-tran_linkedin_1200x1500.png?v=ca14d11a" alt="Dat Tran, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -399,9 +402,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="deb-hart-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="deb-hart/deb-hart_ig-story_1080x1920.png?v=7dd8fcb1" target="_blank" rel="noopener"><img src="deb-hart/deb-hart_ig-story_1080x1920.png?v=7dd8fcb1" alt="Deb Hart, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=deb-hart</span>Mention sticker @athena_international</p>
-<pre id="deb-hart-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="deb-hart-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="deb-hart-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=deb-hart</code><button type="button" class="copy small" data-for="deb-hart-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="deb-hart-st-text">Get your pass</code><button type="button" class="copy small" data-for="deb-hart-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="deb-hart-st-mention">@athena_international</code><button type="button" class="copy small" data-for="deb-hart-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="deb-hart/deb-hart_linkedin_1200x1500.png?v=a61c7620" target="_blank" rel="noopener"><img src="deb-hart/deb-hart_linkedin_1200x1500.png?v=a61c7620" alt="Deb Hart, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -438,9 +441,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="dominique-ranieri-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="dominique-ranieri/dominique-ranieri_ig-story_1080x1920.png?v=0d974866" target="_blank" rel="noopener"><img src="dominique-ranieri/dominique-ranieri_ig-story_1080x1920.png?v=0d974866" alt="Dominique Ranieri, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dominique-ranieri</span>Mention sticker @athena_international</p>
-<pre id="dominique-ranieri-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="dominique-ranieri-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="dominique-ranieri-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=dominique-ranieri</code><button type="button" class="copy small" data-for="dominique-ranieri-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="dominique-ranieri-st-text">Get your pass</code><button type="button" class="copy small" data-for="dominique-ranieri-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="dominique-ranieri-st-mention">@athena_international</code><button type="button" class="copy small" data-for="dominique-ranieri-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="dominique-ranieri/dominique-ranieri_linkedin_1200x1500.png?v=a8cadf77" target="_blank" rel="noopener"><img src="dominique-ranieri/dominique-ranieri_linkedin_1200x1500.png?v=a8cadf77" alt="Dominique Ranieri, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -477,9 +480,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="gavriella-schuster-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="gavriella-schuster/gavriella-schuster_ig-story_1080x1920.png?v=f1de41b3" target="_blank" rel="noopener"><img src="gavriella-schuster/gavriella-schuster_ig-story_1080x1920.png?v=f1de41b3" alt="Gavriella Schuster, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=gavriella-schuster</span>Mention sticker @athena_international</p>
-<pre id="gavriella-schuster-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="gavriella-schuster-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="gavriella-schuster-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=gavriella-schuster</code><button type="button" class="copy small" data-for="gavriella-schuster-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="gavriella-schuster-st-text">Get your pass</code><button type="button" class="copy small" data-for="gavriella-schuster-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="gavriella-schuster-st-mention">@athena_international</code><button type="button" class="copy small" data-for="gavriella-schuster-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="gavriella-schuster/gavriella-schuster_linkedin_1200x1500.png?v=29b15ae8" target="_blank" rel="noopener"><img src="gavriella-schuster/gavriella-schuster_linkedin_1200x1500.png?v=29b15ae8" alt="Gavriella Schuster, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -516,9 +519,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="heather-reaume-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="heather-reaume/heather-reaume_ig-story_1080x1920.png?v=06d16e91" target="_blank" rel="noopener"><img src="heather-reaume/heather-reaume_ig-story_1080x1920.png?v=06d16e91" alt="Heather Reaume, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=heather-reaume</span>Mention sticker @athena_international</p>
-<pre id="heather-reaume-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="heather-reaume-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="heather-reaume-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=heather-reaume</code><button type="button" class="copy small" data-for="heather-reaume-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="heather-reaume-st-text">Get your pass</code><button type="button" class="copy small" data-for="heather-reaume-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="heather-reaume-st-mention">@athena_international</code><button type="button" class="copy small" data-for="heather-reaume-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="heather-reaume/heather-reaume_linkedin_1200x1500.png?v=eb6b5102" target="_blank" rel="noopener"><img src="heather-reaume/heather-reaume_linkedin_1200x1500.png?v=eb6b5102" alt="Heather Reaume, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -555,9 +558,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="isadora-maria-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="isadora-maria/isadora-maria_ig-story_1080x1920.png?v=6b7938d6" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_ig-story_1080x1920.png?v=6b7938d6" alt="Isadora Maria, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=isadora-maria</span>Mention sticker @athena_international</p>
-<pre id="isadora-maria-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="isadora-maria-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="isadora-maria-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=isadora-maria</code><button type="button" class="copy small" data-for="isadora-maria-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="isadora-maria-st-text">Get your pass</code><button type="button" class="copy small" data-for="isadora-maria-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="isadora-maria-st-mention">@athena_international</code><button type="button" class="copy small" data-for="isadora-maria-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="isadora-maria/isadora-maria_linkedin_1200x1500.png?v=b1857a25" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_linkedin_1200x1500.png?v=b1857a25" alt="Isadora Maria, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -594,9 +597,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="jc-ayers-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="jc-ayers/jc-ayers_ig-story_1080x1920.png?v=9e6c7290" target="_blank" rel="noopener"><img src="jc-ayers/jc-ayers_ig-story_1080x1920.png?v=9e6c7290" alt="JC Ayers, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jc-ayers</span>Mention sticker @athena_international</p>
-<pre id="jc-ayers-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="jc-ayers-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="jc-ayers-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jc-ayers</code><button type="button" class="copy small" data-for="jc-ayers-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="jc-ayers-st-text">Get your pass</code><button type="button" class="copy small" data-for="jc-ayers-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="jc-ayers-st-mention">@athena_international</code><button type="button" class="copy small" data-for="jc-ayers-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="jc-ayers/jc-ayers_linkedin_1200x1500.png?v=47d855fd" target="_blank" rel="noopener"><img src="jc-ayers/jc-ayers_linkedin_1200x1500.png?v=47d855fd" alt="JC Ayers, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -633,9 +636,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="jody-bishop-pompili-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="jody-bishop-pompili/jody-bishop-pompili_ig-story_1080x1920.png?v=4542c088" target="_blank" rel="noopener"><img src="jody-bishop-pompili/jody-bishop-pompili_ig-story_1080x1920.png?v=4542c088" alt="Jody Bishop-Pompili, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jody-bishop-pompili</span>Mention sticker @athena_international</p>
-<pre id="jody-bishop-pompili-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="jody-bishop-pompili-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="jody-bishop-pompili-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=jody-bishop-pompili</code><button type="button" class="copy small" data-for="jody-bishop-pompili-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="jody-bishop-pompili-st-text">Get your pass</code><button type="button" class="copy small" data-for="jody-bishop-pompili-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="jody-bishop-pompili-st-mention">@athena_international</code><button type="button" class="copy small" data-for="jody-bishop-pompili-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="jody-bishop-pompili/jody-bishop-pompili_linkedin_1200x1500.png?v=f51ea40c" target="_blank" rel="noopener"><img src="jody-bishop-pompili/jody-bishop-pompili_linkedin_1200x1500.png?v=f51ea40c" alt="Jody Bishop-Pompili, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -672,9 +675,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="karen-bird-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="karen-bird/karen-bird_ig-story_1080x1920.png?v=55505712" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_ig-story_1080x1920.png?v=55505712" alt="Karen Bird, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karen-bird</span>Mention sticker @athena_international</p>
-<pre id="karen-bird-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="karen-bird-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="karen-bird-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karen-bird</code><button type="button" class="copy small" data-for="karen-bird-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="karen-bird-st-text">Get your pass</code><button type="button" class="copy small" data-for="karen-bird-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="karen-bird-st-mention">@athena_international</code><button type="button" class="copy small" data-for="karen-bird-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="karen-bird/karen-bird_linkedin_1200x1500.png?v=c2251f4d" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_linkedin_1200x1500.png?v=c2251f4d" alt="Karen Bird, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -711,9 +714,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="karol-pelletier-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="karol-pelletier/karol-pelletier_ig-story_1080x1920.png?v=31fc6abd" target="_blank" rel="noopener"><img src="karol-pelletier/karol-pelletier_ig-story_1080x1920.png?v=31fc6abd" alt="Karol Pelletier, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karol-pelletier</span>Mention sticker @athena_international</p>
-<pre id="karol-pelletier-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="karol-pelletier-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="karol-pelletier-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=karol-pelletier</code><button type="button" class="copy small" data-for="karol-pelletier-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="karol-pelletier-st-text">Get your pass</code><button type="button" class="copy small" data-for="karol-pelletier-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="karol-pelletier-st-mention">@athena_international</code><button type="button" class="copy small" data-for="karol-pelletier-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="karol-pelletier/karol-pelletier_linkedin_1200x1500.png?v=79672da5" target="_blank" rel="noopener"><img src="karol-pelletier/karol-pelletier_linkedin_1200x1500.png?v=79672da5" alt="Karol Pelletier, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -750,9 +753,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="kimberli-green-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="kimberli-green/kimberli-green_ig-story_1080x1920.png?v=8b873e1c" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_ig-story_1080x1920.png?v=8b873e1c" alt="Kimberli Green, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kimberli-green</span>Mention sticker @athena_international</p>
-<pre id="kimberli-green-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="kimberli-green-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="kimberli-green-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kimberli-green</code><button type="button" class="copy small" data-for="kimberli-green-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="kimberli-green-st-text">Get your pass</code><button type="button" class="copy small" data-for="kimberli-green-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="kimberli-green-st-mention">@athena_international</code><button type="button" class="copy small" data-for="kimberli-green-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="kimberli-green/kimberli-green_linkedin_1200x1500.png?v=7d42012c" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_linkedin_1200x1500.png?v=7d42012c" alt="Kimberli Green, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -789,9 +792,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="kurt-kwiatkowski-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="kurt-kwiatkowski/kurt-kwiatkowski_ig-story_1080x1920.png?v=57fe2a7a" target="_blank" rel="noopener"><img src="kurt-kwiatkowski/kurt-kwiatkowski_ig-story_1080x1920.png?v=57fe2a7a" alt="Kurt Kwiatkowski, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kurt-kwiatkowski</span>Mention sticker @athena_international</p>
-<pre id="kurt-kwiatkowski-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="kurt-kwiatkowski-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="kurt-kwiatkowski-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=kurt-kwiatkowski</code><button type="button" class="copy small" data-for="kurt-kwiatkowski-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="kurt-kwiatkowski-st-text">Get your pass</code><button type="button" class="copy small" data-for="kurt-kwiatkowski-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="kurt-kwiatkowski-st-mention">@athena_international</code><button type="button" class="copy small" data-for="kurt-kwiatkowski-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="kurt-kwiatkowski/kurt-kwiatkowski_linkedin_1200x1500.png?v=32e98565" target="_blank" rel="noopener"><img src="kurt-kwiatkowski/kurt-kwiatkowski_linkedin_1200x1500.png?v=32e98565" alt="Kurt Kwiatkowski, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -828,9 +831,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="linda-ackley-eaker-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="linda-ackley-eaker/linda-ackley-eaker_ig-story_1080x1920.png?v=8448bf6b" target="_blank" rel="noopener"><img src="linda-ackley-eaker/linda-ackley-eaker_ig-story_1080x1920.png?v=8448bf6b" alt="Linda Ackley-Eaker, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=linda-ackley-eaker</span>Mention sticker @athena_international</p>
-<pre id="linda-ackley-eaker-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="linda-ackley-eaker-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="linda-ackley-eaker-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=linda-ackley-eaker</code><button type="button" class="copy small" data-for="linda-ackley-eaker-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="linda-ackley-eaker-st-text">Get your pass</code><button type="button" class="copy small" data-for="linda-ackley-eaker-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="linda-ackley-eaker-st-mention">@athena_international</code><button type="button" class="copy small" data-for="linda-ackley-eaker-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="linda-ackley-eaker/linda-ackley-eaker_linkedin_1200x1500.png?v=c8066b93" target="_blank" rel="noopener"><img src="linda-ackley-eaker/linda-ackley-eaker_linkedin_1200x1500.png?v=c8066b93" alt="Linda Ackley-Eaker, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -867,9 +870,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="melissa-cooper-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="melissa-cooper/melissa-cooper_ig-story_1080x1920.png?v=dac91eb9" target="_blank" rel="noopener"><img src="melissa-cooper/melissa-cooper_ig-story_1080x1920.png?v=dac91eb9" alt="Melissa Cooper, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=melissa-cooper</span>Mention sticker @athena_international</p>
-<pre id="melissa-cooper-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="melissa-cooper-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="melissa-cooper-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=melissa-cooper</code><button type="button" class="copy small" data-for="melissa-cooper-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="melissa-cooper-st-text">Get your pass</code><button type="button" class="copy small" data-for="melissa-cooper-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="melissa-cooper-st-mention">@athena_international</code><button type="button" class="copy small" data-for="melissa-cooper-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="melissa-cooper/melissa-cooper_linkedin_1200x1500.png?v=2a29c363" target="_blank" rel="noopener"><img src="melissa-cooper/melissa-cooper_linkedin_1200x1500.png?v=2a29c363" alt="Melissa Cooper, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -906,9 +909,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="michelle-massey-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="michelle-massey/michelle-massey_ig-story_1080x1920.png?v=e80fa6d4" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_ig-story_1080x1920.png?v=e80fa6d4" alt="Michelle Massey, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=michelle-massey</span>Mention sticker @athena_international</p>
-<pre id="michelle-massey-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="michelle-massey-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="michelle-massey-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=michelle-massey</code><button type="button" class="copy small" data-for="michelle-massey-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="michelle-massey-st-text">Get your pass</code><button type="button" class="copy small" data-for="michelle-massey-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="michelle-massey-st-mention">@athena_international</code><button type="button" class="copy small" data-for="michelle-massey-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="michelle-massey/michelle-massey_linkedin_1200x1500.png?v=3a56e04a" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_linkedin_1200x1500.png?v=3a56e04a" alt="Michelle Massey, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -945,9 +948,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="moacir-antonelli-ponti-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="moacir-antonelli-ponti/moacir-antonelli-ponti_ig-story_1080x1920.png?v=727eb381" target="_blank" rel="noopener"><img src="moacir-antonelli-ponti/moacir-antonelli-ponti_ig-story_1080x1920.png?v=727eb381" alt="Dr. Moacir Antonelli Ponti, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=moacir-antonelli-ponti</span>Mention sticker @athena_international</p>
-<pre id="moacir-antonelli-ponti-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="moacir-antonelli-ponti-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="moacir-antonelli-ponti-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=moacir-antonelli-ponti</code><button type="button" class="copy small" data-for="moacir-antonelli-ponti-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="moacir-antonelli-ponti-st-text">Get your pass</code><button type="button" class="copy small" data-for="moacir-antonelli-ponti-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="moacir-antonelli-ponti-st-mention">@athena_international</code><button type="button" class="copy small" data-for="moacir-antonelli-ponti-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="moacir-antonelli-ponti/moacir-antonelli-ponti_linkedin_1200x1500.png?v=182dd9b7" target="_blank" rel="noopener"><img src="moacir-antonelli-ponti/moacir-antonelli-ponti_linkedin_1200x1500.png?v=182dd9b7" alt="Dr. Moacir Antonelli Ponti, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -984,9 +987,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="nicole-noll-williams-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="nicole-noll-williams/nicole-noll-williams_ig-story_1080x1920.png?v=be624729" target="_blank" rel="noopener"><img src="nicole-noll-williams/nicole-noll-williams_ig-story_1080x1920.png?v=be624729" alt="Nicole Noll-Williams, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=nicole-noll-williams</span>Mention sticker @athena_international</p>
-<pre id="nicole-noll-williams-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="nicole-noll-williams-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="nicole-noll-williams-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=nicole-noll-williams</code><button type="button" class="copy small" data-for="nicole-noll-williams-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="nicole-noll-williams-st-text">Get your pass</code><button type="button" class="copy small" data-for="nicole-noll-williams-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="nicole-noll-williams-st-mention">@athena_international</code><button type="button" class="copy small" data-for="nicole-noll-williams-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="nicole-noll-williams/nicole-noll-williams_linkedin_1200x1500.png?v=7ebec7db" target="_blank" rel="noopener"><img src="nicole-noll-williams/nicole-noll-williams_linkedin_1200x1500.png?v=7ebec7db" alt="Nicole Noll-Williams, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1023,9 +1026,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="paula-farmer-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="paula-farmer/paula-farmer_ig-story_1080x1920.png?v=8851647d" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_ig-story_1080x1920.png?v=8851647d" alt="Paula Farmer, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=paula-farmer</span>Mention sticker @athena_international</p>
-<pre id="paula-farmer-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="paula-farmer-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="paula-farmer-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=paula-farmer</code><button type="button" class="copy small" data-for="paula-farmer-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="paula-farmer-st-text">Get your pass</code><button type="button" class="copy small" data-for="paula-farmer-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="paula-farmer-st-mention">@athena_international</code><button type="button" class="copy small" data-for="paula-farmer-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="paula-farmer/paula-farmer_linkedin_1200x1500.png?v=68478503" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_linkedin_1200x1500.png?v=68478503" alt="Paula Farmer, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1062,9 +1065,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="rachel-b-lee-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="rachel-b-lee/rachel-b-lee_ig-story_1080x1920.png?v=9e71bdf3" target="_blank" rel="noopener"><img src="rachel-b-lee/rachel-b-lee_ig-story_1080x1920.png?v=9e71bdf3" alt="Rachel B. Lee, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=rachel-b-lee</span>Mention sticker @athena_international</p>
-<pre id="rachel-b-lee-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="rachel-b-lee-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="rachel-b-lee-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=rachel-b-lee</code><button type="button" class="copy small" data-for="rachel-b-lee-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="rachel-b-lee-st-text">Get your pass</code><button type="button" class="copy small" data-for="rachel-b-lee-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="rachel-b-lee-st-mention">@athena_international</code><button type="button" class="copy small" data-for="rachel-b-lee-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="rachel-b-lee/rachel-b-lee_linkedin_1200x1500.png?v=28aa0248" target="_blank" rel="noopener"><img src="rachel-b-lee/rachel-b-lee_linkedin_1200x1500.png?v=28aa0248" alt="Rachel B. Lee, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1101,9 +1104,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="traci-costa-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="traci-costa/traci-costa_ig-story_1080x1920.png?v=5d42afd1" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_ig-story_1080x1920.png?v=5d42afd1" alt="Traci Costa, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=traci-costa</span>Mention sticker @athena_international</p>
-<pre id="traci-costa-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="traci-costa-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="traci-costa-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=traci-costa</code><button type="button" class="copy small" data-for="traci-costa-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="traci-costa-st-text">Get your pass</code><button type="button" class="copy small" data-for="traci-costa-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="traci-costa-st-mention">@athena_international</code><button type="button" class="copy small" data-for="traci-costa-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="traci-costa/traci-costa_linkedin_1200x1500.png?v=da6adad9" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_linkedin_1200x1500.png?v=da6adad9" alt="Traci Costa, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1142,9 +1145,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-ann-playter-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="ann-playter/ann-playter_board_ig-story_1080x1920.png?v=0d7bbded" target="_blank" rel="noopener"><img src="ann-playter/ann-playter_board_ig-story_1080x1920.png?v=0d7bbded" alt="Ann Playter, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-ann-playter</span>Mention sticker @athena_international</p>
-<pre id="b-ann-playter-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-ann-playter-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-ann-playter-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-ann-playter</code><button type="button" class="copy small" data-for="b-ann-playter-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-ann-playter-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-ann-playter-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-ann-playter-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-ann-playter-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="ann-playter/ann-playter_board_linkedin_1200x1500.png?v=a48a369b" target="_blank" rel="noopener"><img src="ann-playter/ann-playter_board_linkedin_1200x1500.png?v=a48a369b" alt="Ann Playter, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1179,9 +1182,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-carrie-rathbun-hawks-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_board_ig-story_1080x1920.png?v=00ee10cb" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_board_ig-story_1080x1920.png?v=00ee10cb" alt="Carrie Rathbun Hawks, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-carrie-rathbun-hawks</span>Mention sticker @athena_international</p>
-<pre id="b-carrie-rathbun-hawks-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-carrie-rathbun-hawks-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-carrie-rathbun-hawks-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-carrie-rathbun-hawks</code><button type="button" class="copy small" data-for="b-carrie-rathbun-hawks-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-carrie-rathbun-hawks-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-carrie-rathbun-hawks-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-carrie-rathbun-hawks-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-carrie-rathbun-hawks-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="carrie-rathbun-hawks/carrie-rathbun-hawks_board_linkedin_1200x1500.png?v=0b526a14" target="_blank" rel="noopener"><img src="carrie-rathbun-hawks/carrie-rathbun-hawks_board_linkedin_1200x1500.png?v=0b526a14" alt="Carrie Rathbun Hawks, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1216,9 +1219,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-isadora-maria-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="isadora-maria/isadora-maria_board_ig-story_1080x1920.png?v=a313654d" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_board_ig-story_1080x1920.png?v=a313654d" alt="Isadora Maria, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-isadora-maria</span>Mention sticker @athena_international</p>
-<pre id="b-isadora-maria-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-isadora-maria-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-isadora-maria-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-isadora-maria</code><button type="button" class="copy small" data-for="b-isadora-maria-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-isadora-maria-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-isadora-maria-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-isadora-maria-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-isadora-maria-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="isadora-maria/isadora-maria_board_linkedin_1200x1500.png?v=7e64b413" target="_blank" rel="noopener"><img src="isadora-maria/isadora-maria_board_linkedin_1200x1500.png?v=7e64b413" alt="Isadora Maria, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1253,9 +1256,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-karen-bird-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="karen-bird/karen-bird_board_ig-story_1080x1920.png?v=b2f02c21" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_board_ig-story_1080x1920.png?v=b2f02c21" alt="Karen Bird, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-karen-bird</span>Mention sticker @athena_international</p>
-<pre id="b-karen-bird-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-karen-bird-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-karen-bird-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-karen-bird</code><button type="button" class="copy small" data-for="b-karen-bird-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-karen-bird-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-karen-bird-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-karen-bird-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-karen-bird-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="karen-bird/karen-bird_board_linkedin_1200x1500.png?v=20c61a83" target="_blank" rel="noopener"><img src="karen-bird/karen-bird_board_linkedin_1200x1500.png?v=20c61a83" alt="Karen Bird, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1290,9 +1293,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-kimberley-bates-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="kimberley-bates/kimberley-bates_board_ig-story_1080x1920.png?v=bb5988b1" target="_blank" rel="noopener"><img src="kimberley-bates/kimberley-bates_board_ig-story_1080x1920.png?v=bb5988b1" alt="Kimberley Bates, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-kimberley-bates</span>Mention sticker @athena_international</p>
-<pre id="b-kimberley-bates-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-kimberley-bates-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-kimberley-bates-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-kimberley-bates</code><button type="button" class="copy small" data-for="b-kimberley-bates-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-kimberley-bates-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-kimberley-bates-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-kimberley-bates-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-kimberley-bates-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="kimberley-bates/kimberley-bates_board_linkedin_1200x1500.png?v=47e70df7" target="_blank" rel="noopener"><img src="kimberley-bates/kimberley-bates_board_linkedin_1200x1500.png?v=47e70df7" alt="Kimberley Bates, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1327,9 +1330,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-kimberli-green-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="kimberli-green/kimberli-green_board_ig-story_1080x1920.png?v=f1fc86d6" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_board_ig-story_1080x1920.png?v=f1fc86d6" alt="Kimberli Green, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-kimberli-green</span>Mention sticker @athena_international</p>
-<pre id="b-kimberli-green-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-kimberli-green-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-kimberli-green-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-kimberli-green</code><button type="button" class="copy small" data-for="b-kimberli-green-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-kimberli-green-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-kimberli-green-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-kimberli-green-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-kimberli-green-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="kimberli-green/kimberli-green_board_linkedin_1200x1500.png?v=9302c805" target="_blank" rel="noopener"><img src="kimberli-green/kimberli-green_board_linkedin_1200x1500.png?v=9302c805" alt="Kimberli Green, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1364,9 +1367,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-michelle-massey-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="michelle-massey/michelle-massey_board_ig-story_1080x1920.png?v=f0740fb9" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_board_ig-story_1080x1920.png?v=f0740fb9" alt="Michelle Massey, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-michelle-massey</span>Mention sticker @athena_international</p>
-<pre id="b-michelle-massey-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-michelle-massey-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-michelle-massey-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-michelle-massey</code><button type="button" class="copy small" data-for="b-michelle-massey-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-michelle-massey-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-michelle-massey-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-michelle-massey-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-michelle-massey-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="michelle-massey/michelle-massey_board_linkedin_1200x1500.png?v=21afe322" target="_blank" rel="noopener"><img src="michelle-massey/michelle-massey_board_linkedin_1200x1500.png?v=21afe322" alt="Michelle Massey, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1401,9 +1404,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-nicole-newman-enslein-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="nicole-newman-enslein/nicole-newman-enslein_board_ig-story_1080x1920.png?v=6e67a902" target="_blank" rel="noopener"><img src="nicole-newman-enslein/nicole-newman-enslein_board_ig-story_1080x1920.png?v=6e67a902" alt="Nicole Newman Enslein, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-nicole-newman-enslein</span>Mention sticker @athena_international</p>
-<pre id="b-nicole-newman-enslein-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-nicole-newman-enslein-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-nicole-newman-enslein-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-nicole-newman-enslein</code><button type="button" class="copy small" data-for="b-nicole-newman-enslein-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-nicole-newman-enslein-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-nicole-newman-enslein-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-nicole-newman-enslein-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-nicole-newman-enslein-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="nicole-newman-enslein/nicole-newman-enslein_board_linkedin_1200x1500.png?v=1bfa4404" target="_blank" rel="noopener"><img src="nicole-newman-enslein/nicole-newman-enslein_board_linkedin_1200x1500.png?v=1bfa4404" alt="Nicole Newman Enslein, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1438,9 +1441,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-paula-farmer-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="paula-farmer/paula-farmer_board_ig-story_1080x1920.png?v=38654e26" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_board_ig-story_1080x1920.png?v=38654e26" alt="Paula Farmer, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-paula-farmer</span>Mention sticker @athena_international</p>
-<pre id="b-paula-farmer-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-paula-farmer-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-paula-farmer-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-paula-farmer</code><button type="button" class="copy small" data-for="b-paula-farmer-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-paula-farmer-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-paula-farmer-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-paula-farmer-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-paula-farmer-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="paula-farmer/paula-farmer_board_linkedin_1200x1500.png?v=61a026a1" target="_blank" rel="noopener"><img src="paula-farmer/paula-farmer_board_linkedin_1200x1500.png?v=61a026a1" alt="Paula Farmer, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1475,9 +1478,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-sandra-corey-knight-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="sandra-corey-knight/sandra-corey-knight_board_ig-story_1080x1920.png?v=8db596b8" target="_blank" rel="noopener"><img src="sandra-corey-knight/sandra-corey-knight_board_ig-story_1080x1920.png?v=8db596b8" alt="Sandra Corey-Knight, J.D., Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-sandra-corey-knight</span>Mention sticker @athena_international</p>
-<pre id="b-sandra-corey-knight-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-sandra-corey-knight-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-sandra-corey-knight-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-sandra-corey-knight</code><button type="button" class="copy small" data-for="b-sandra-corey-knight-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-sandra-corey-knight-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-sandra-corey-knight-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-sandra-corey-knight-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-sandra-corey-knight-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="sandra-corey-knight/sandra-corey-knight_board_linkedin_1200x1500.png?v=0531c17b" target="_blank" rel="noopener"><img src="sandra-corey-knight/sandra-corey-knight_board_linkedin_1200x1500.png?v=0531c17b" alt="Sandra Corey-Knight, J.D., LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1512,9 +1515,9 @@ Tickets: conference.athenainternational.org
 <button type="button" class="copy" data-for="b-traci-costa-ig">Copy text</button></div></article>
 <article class="ch">
 <a class="shot" href="traci-costa/traci-costa_board_ig-story_1080x1920.png?v=68d06261" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_board_ig-story_1080x1920.png?v=68d06261" alt="Traci Costa, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-traci-costa</span>Mention sticker @athena_international</p>
-<pre id="b-traci-costa-st">Who&#x27;s coming with me?</pre>
-<button type="button" class="copy" data-for="b-traci-costa-st">Copy text</button></div></article>
+<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4>
+<div class="fields"><div class="field"><span class="flabel">Link sticker</span><code class="fval" id="b-traci-costa-st-link">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=speaker_kit_2027&amp;utm_content=board-traci-costa</code><button type="button" class="copy small" data-for="b-traci-costa-st-link" data-label="Copy link">Copy link</button></div><div class="field"><span class="flabel">Sticker text</span><code class="fval" id="b-traci-costa-st-text">Get your pass</code><button type="button" class="copy small" data-for="b-traci-costa-st-text" data-label="Copy text">Copy text</button></div><div class="field"><span class="flabel">Mention</span><code class="fval" id="b-traci-costa-st-mention">@athena_international</code><button type="button" class="copy small" data-for="b-traci-costa-st-mention" data-label="Copy mention">Copy mention</button></div></div>
+</div></article>
 <article class="ch">
 <a class="shot" href="traci-costa/traci-costa_board_linkedin_1200x1500.png?v=7a3dc167" target="_blank" rel="noopener"><img src="traci-costa/traci-costa_board_linkedin_1200x1500.png?v=7a3dc167" alt="Traci Costa, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
 <div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4><p class="meta">Tag the ATHENA International company page.</p>
@@ -1531,149 +1534,37 @@ https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=p
 #ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre>
 <button type="button" class="copy" data-for="b-traci-costa-li">Copy text</button></div></article>
 </div></section>
-<h2 class="group" id="conference">ATHENA channels and attendees</h2><p class="grouplead">Posts for ATHENA's own Instagram and LinkedIn, two carousels, and a fill-in-the-blank “Join me” template for people who already bought a ticket.</p><section class="spk" id="ruthie-bolton"><header class="spkhead"><div><p class="role">ATHENA accounts</p><h3>Dr. Ruthie Bolton, ATHENA Global Award recipient</h3></div>
-<div class="tags"><a href="social/ruthie-bolton/captions.txt?v=6fbf0376" target="_blank" rel="noopener">captions.txt</a></div></header><div class="chs"><article class="ch"><a class="shot" href="social/ruthie-bolton/ruthie-bolton_ig-post_1080x1350.png?v=9280ee3c" target="_blank" rel="noopener"><img src="social/ruthie-bolton/ruthie-bolton_ig-post_1080x1350.png?v=9280ee3c" alt="Dr. Ruthie Bolton, ATHENA Global Award recipient, Instagram Post" loading="lazy" width="1080" height="1350"></a>
-<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4>
-<pre id="s-ruthie-bolton-ig">Two-time Olympic gold medalist. WNBA All-Star. Hall of Fame inductee. ATHENA Global Award recipient.
 
-On Saturday, January 30, 2027, we honor Dr. Ruthie Bolton at the ATHENA Awards Celebration in Los Angeles.
 
-VIP pass holders meet Dr. Ruthie Bolton at the VIP book signing and take home a signed copy of her story.
-
-VIP Early Bird $795 · Celebration only $95 · Early Bird ends November 15.
-Tickets: conference.athenainternational.org
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles #ATHENAAward</pre><button type="button" class="copy" data-for="s-ruthie-bolton-ig">Copy text</button></div></article>
-<article class="ch"><a class="shot" href="social/ruthie-bolton/ruthie-bolton_ig-story_1080x1920.png?v=abd6afd1" target="_blank" rel="noopener"><img src="social/ruthie-bolton/ruthie-bolton_ig-story_1080x1920.png?v=abd6afd1" alt="Dr. Ruthie Bolton, ATHENA Global Award recipient, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Claim VIP pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=social_2027&amp;utm_content=ruthie-bolton</span>Mention sticker @athena_international</p>
-<pre id="s-ruthie-bolton-st">Meet Dr. Ruthie Bolton in LA</pre><button type="button" class="copy" data-for="s-ruthie-bolton-st">Copy text</button></div></article>
-<article class="ch"><a class="shot" href="social/ruthie-bolton/ruthie-bolton_linkedin_1200x1500.png?v=5f395887" target="_blank" rel="noopener"><img src="social/ruthie-bolton/ruthie-bolton_linkedin_1200x1500.png?v=5f395887" alt="Dr. Ruthie Bolton, ATHENA Global Award recipient, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
-<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4>
-<pre id="s-ruthie-bolton-li">Two-time Olympic gold medalist, WNBA All-Star, Hall of Fame inductee, and ATHENA Global Award recipient.
-
-On Saturday, January 30, 2027, ATHENA International honors Dr. Ruthie Bolton at the ATHENA Awards Celebration in Los Angeles, the grand finale of three days of leadership development and connection.
-
-VIP pass holders join the VIP book signing with Dr. Ruthie Bolton.
-
-ATHENA International Conference 2027
-January 28-30, 2027 · Hilton Los Angeles/Universal City
-
-VIP Early Bird $795 · Celebration only $95 · Early Bird ends November 15
-https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=social_2027&amp;utm_content=ruthie-bolton
-
-#ATHENA2027 #WomenInLeadership #Leadership</pre><button type="button" class="copy" data-for="s-ruthie-bolton-li">Copy text</button></div></article></div></section><section class="spk" id="painel-turbulence"><header class="spkhead"><div><p class="role">ATHENA accounts</p><h3>Keynote Panel: Leading Through Turbulence</h3></div>
-<div class="tags"><a href="social/painel-turbulence/captions.txt?v=0f4e8b09" target="_blank" rel="noopener">captions.txt</a></div></header><div class="chs"><article class="ch"><a class="shot" href="social/painel-turbulence/painel-turbulence_ig-post_1080x1350.png?v=ef472007" target="_blank" rel="noopener"><img src="social/painel-turbulence/painel-turbulence_ig-post_1080x1350.png?v=ef472007" alt="Keynote Panel: Leading Through Turbulence, Instagram Post" loading="lazy" width="1080" height="1350"></a>
-<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4>
-<pre id="s-painel-turbulence-ig">Four women who lead airports. One conversation about leading when the pressure rises.
-
-Keynote panel “Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises”
-Friday, January 29, 9:00 AM
-
-With Nicole Noll-Williams (Capital Region Airport Authority), Melissa Cooper (Kansas City International Airport), Charlene Reynolds (John Wayne Airport) and Dominique Ranieri (West Virginia International Yeager Airport).
-
-Early Bird pricing from $545 ends November 15.
-Tickets: conference.athenainternational.org
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles #WomenInAviation</pre><button type="button" class="copy" data-for="s-painel-turbulence-ig">Copy text</button></div></article>
-<article class="ch"><a class="shot" href="social/painel-turbulence/painel-turbulence_ig-story_1080x1920.png?v=46ecbc4e" target="_blank" rel="noopener"><img src="social/painel-turbulence/painel-turbulence_ig-story_1080x1920.png?v=46ecbc4e" alt="Keynote Panel: Leading Through Turbulence, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Get your pass”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=social_2027&amp;utm_content=painel-turbulence</span>Mention sticker @athena_international</p>
-<pre id="s-painel-turbulence-st">Four airport leaders, one stage</pre><button type="button" class="copy" data-for="s-painel-turbulence-st">Copy text</button></div></article>
-<article class="ch"><a class="shot" href="social/painel-turbulence/painel-turbulence_linkedin_1200x1500.png?v=09768703" target="_blank" rel="noopener"><img src="social/painel-turbulence/painel-turbulence_linkedin_1200x1500.png?v=09768703" alt="Keynote Panel: Leading Through Turbulence, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
-<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4>
-<pre id="s-painel-turbulence-li">In aviation, turbulence isn&#x27;t a metaphor. These four leaders run airports.
-
-At ATHENA 2027, Nicole Noll-Williams (Capital Region Airport Authority), Melissa Cooper (Kansas City International Airport), Charlene Reynolds (John Wayne Airport) and Dominique Ranieri (West Virginia International Yeager Airport) take the stage for the keynote panel Leading Through Turbulence: Courage, Clarity, and Calm When the Pressure Rises. Friday, January 29, 9:00 AM.
-
-ATHENA International Conference 2027
-January 28-30, 2027 · Hilton Los Angeles/Universal City
-
-Early Bird pricing from $545 ends November 15.
-https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=social_2027&amp;utm_content=painel-turbulence
-
-#ATHENA2027 #WomenInLeadership #WomenInAviation</pre><button type="button" class="copy" data-for="s-painel-turbulence-li">Copy text</button></div></article></div></section><section class="spk" id="attendee-join-me"><header class="spkhead"><div><p class="role">Attendees who bought a ticket (fill in the [blanks])</p><h3>&quot;Join me&quot; template for attendees</h3></div>
-<div class="tags"><a href="social/attendee-join-me/captions.txt?v=20f471f1" target="_blank" rel="noopener">captions.txt</a></div></header><div class="chs"><article class="ch"><a class="shot" href="social/attendee-join-me/attendee-join-me_ig-post_1080x1350.png?v=f43b66cc" target="_blank" rel="noopener"><img src="social/attendee-join-me/attendee-join-me_ig-post_1080x1350.png?v=f43b66cc" alt="&quot;Join me&quot; template for attendees, Instagram Post" loading="lazy" width="1080" height="1350"></a>
-<div class="chbody"><h4>Instagram Post<span>1080 × 1350</span></h4>
-<pre id="s-attendee-join-me-ig">I&#x27;m going to ATHENA 2027.
-
-In January I&#x27;ll be in Los Angeles for three days of keynotes, hands-on micro-labs and real connection with women leaders and allies.
-
-What I&#x27;m most looking forward to: [the keynote, micro-lab or moment you&#x27;re excited about].
-
-Who&#x27;s coming with me? Early Bird pricing from $545 ends November 15.
-Tickets: conference.athenainternational.org
-
-@athena_international
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre><button type="button" class="copy" data-for="s-attendee-join-me-ig">Copy text</button></div></article>
-<article class="ch"><a class="shot" href="social/attendee-join-me/attendee-join-me_ig-story_1080x1920.png?v=1a551cc6" target="_blank" rel="noopener"><img src="social/attendee-join-me/attendee-join-me_ig-story_1080x1920.png?v=1a551cc6" alt="&quot;Join me&quot; template for attendees, Instagram Story" loading="lazy" width="1080" height="1920"></a>
-<div class="chbody"><h4>Instagram Story<span>1080 × 1920</span></h4><p class="meta">Link sticker “Join me”<br><span class="url">https://conference.athenainternational.org/?utm_source=instagram&amp;utm_medium=story&amp;utm_campaign=social_2027&amp;utm_content=attendee-join-me</span>Mention sticker @athena_international</p>
-<pre id="s-attendee-join-me-st">See you in LA?</pre><button type="button" class="copy" data-for="s-attendee-join-me-st">Copy text</button></div></article>
-<article class="ch"><a class="shot" href="social/attendee-join-me/attendee-join-me_linkedin_1200x1500.png?v=84cc8ee6" target="_blank" rel="noopener"><img src="social/attendee-join-me/attendee-join-me_linkedin_1200x1500.png?v=84cc8ee6" alt="&quot;Join me&quot; template for attendees, LinkedIn Post" loading="lazy" width="1080" height="1350"></a>
-<div class="chbody"><h4>LinkedIn Post<span>1200 × 1500</span></h4>
-<pre id="s-attendee-join-me-li">I&#x27;m heading to Los Angeles in January for the ATHENA International Conference 2027.
-
-I&#x27;m going because [your reason: what you want to grow, learn or bring back to your team or business].
-
-Three days of keynotes, hands-on micro-labs and real connection with leaders across industries, closing with the ATHENA Awards Celebration.
-
-Who&#x27;s coming with me? Early Bird pricing from $545 ends November 15.
-https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=social_2027&amp;utm_content=attendee-join-me
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre><button type="button" class="copy" data-for="s-attendee-join-me-li">Copy text</button></div></article></div></section><section class="spk" id="carrossel-walk-away"><header class="spkhead"><div><p class="role">ATHENA accounts</p><h3>Carousel: What you&#x27;ll walk away with</h3></div>
-<div class="tags"><a href="social/carrossel-walk-away/captions.txt?v=aa710618" target="_blank" rel="noopener">captions.txt</a></div></header><div class="slides"><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-01_1080x1350.png?v=9415654f" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-01_1080x1350.png?v=9415654f" alt="Slide 1" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-02_1080x1350.png?v=4d2119f9" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-02_1080x1350.png?v=4d2119f9" alt="Slide 2" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-03_1080x1350.png?v=e4fb0525" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-03_1080x1350.png?v=e4fb0525" alt="Slide 3" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-04_1080x1350.png?v=f5580402" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-04_1080x1350.png?v=f5580402" alt="Slide 4" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-05_1080x1350.png?v=bf1a922a" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-05_1080x1350.png?v=bf1a922a" alt="Slide 5" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-06_1080x1350.png?v=810b7e0e" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-06_1080x1350.png?v=810b7e0e" alt="Slide 6" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-walk-away/carrossel-walk-away_slide-07_1080x1350.png?v=2f6fe3b5" target="_blank" rel="noopener"><img src="social/carrossel-walk-away/carrossel-walk-away_slide-07_1080x1350.png?v=2f6fe3b5" alt="Slide 7" loading="lazy" width="1080" height="1350"></a></div>
-<div class="chs two"><div class="chbody"><h4>Instagram Carousel<span>7 slides · 1080 × 1350</span></h4>
-<pre id="s-carrossel-walk-away-ig">What do you actually take home from a leadership conference? Swipe through.
-
-Your personal leadership compass: the eight ATHENA Principles.
-AI-era leadership tools you can use on Monday.
-A network of peers and mentors.
-A plan to bring back.
-Eight online Mini Labs after the event.
-
-ATHENA International Conference · January 28-30, 2027 · Hilton Los Angeles/Universal City
-
-Early Bird pricing from $545 ends November 15.
-Tickets: conference.athenainternational.org
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre><button type="button" class="copy" data-for="s-carrossel-walk-away-ig">Copy text</button></div>
-<div class="chbody"><h4>LinkedIn Document Post<span>PDF</span></h4><p class="meta">Upload <a href="social/carrossel-walk-away/carrossel-walk-away_linkedin.pdf?v=c55456aa" target="_blank" rel="noopener">carrossel-walk-away_linkedin.pdf</a> as a document titled “What you&#x27;ll walk away with: ATHENA 2027”.</p>
-<pre id="s-carrossel-walk-away-li">What do you take home from three days of leadership development? Five things, in this carousel.
-
-The eight ATHENA Principles, refined over 44 years. Practical tools for leading through change, AI, and pressure. A network of peers and mentors. A plan to bring back. And eight online Mini Labs that keep the work going after January 30.
-
-ATHENA International Conference 2027
-January 28-30, 2027 · Hilton Los Angeles/Universal City
-
-Early Bird pricing from $545 ends November 15.
-https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=social_2027&amp;utm_content=carrossel-walk-away
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre><button type="button" class="copy" data-for="s-carrossel-walk-away-li">Copy text</button></div></div></section><section class="spk" id="carrossel-experience"><header class="spkhead"><div><p class="role">ATHENA accounts</p><h3>Carousel: Not a lineup of talks</h3></div>
-<div class="tags"><a href="social/carrossel-experience/captions.txt?v=d11408bc" target="_blank" rel="noopener">captions.txt</a></div></header><div class="slides"><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-01_1080x1350.png?v=3e587310" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-01_1080x1350.png?v=3e587310" alt="Slide 1" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-02_1080x1350.png?v=b8830b18" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-02_1080x1350.png?v=b8830b18" alt="Slide 2" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-03_1080x1350.png?v=f2492b25" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-03_1080x1350.png?v=f2492b25" alt="Slide 3" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-04_1080x1350.png?v=cb9a37e6" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-04_1080x1350.png?v=cb9a37e6" alt="Slide 4" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-05_1080x1350.png?v=2bad4ea8" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-05_1080x1350.png?v=2bad4ea8" alt="Slide 5" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-06_1080x1350.png?v=6445d5fd" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-06_1080x1350.png?v=6445d5fd" alt="Slide 6" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-07_1080x1350.png?v=9ed5a9ae" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-07_1080x1350.png?v=9ed5a9ae" alt="Slide 7" loading="lazy" width="1080" height="1350"></a><a class="slideth" href="social/carrossel-experience/carrossel-experience_slide-08_1080x1350.png?v=2ba7256f" target="_blank" rel="noopener"><img src="social/carrossel-experience/carrossel-experience_slide-08_1080x1350.png?v=2ba7256f" alt="Slide 8" loading="lazy" width="1080" height="1350"></a></div>
-<div class="chs two"><div class="chbody"><h4>Instagram Carousel<span>8 slides · 1080 × 1350</span></h4>
-<pre id="s-carrossel-experience-ig">Not a lineup of talks. A leadership experience. Swipe through three days in Los Angeles.
-
-Keynotes and panels on AI, change, and influence.
-Hands-on micro-labs with skills you can use on Monday.
-ATHENA Networking Dinner Pods.
-Morning wellness.
-A welcome reception with live music by ADORA.
-The ATHENA Awards Celebration.
-
-Early Bird pricing from $545 ends November 15.
-Tickets: conference.athenainternational.org
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment #WomenLeaders #LosAngeles</pre><button type="button" class="copy" data-for="s-carrossel-experience-ig">Copy text</button></div>
-<div class="chbody"><h4>LinkedIn Document Post<span>PDF</span></h4><p class="meta">Upload <a href="social/carrossel-experience/carrossel-experience_linkedin.pdf?v=58bc62ee" target="_blank" rel="noopener">carrossel-experience_linkedin.pdf</a> as a document titled “Not a lineup of talks: ATHENA 2027”.</p>
-<pre id="s-carrossel-experience-li">Most conferences give you a lineup of talks. ATHENA 2027 gives you three days built for transformation.
-
-Keynotes and panels on AI, change, and influence. Hands-on micro-labs. Dinner pods where a small group shares a table with a speaker. Morning wellness. A welcome reception with live music by ADORA. And the ATHENA Awards Celebration on January 30.
-
-ATHENA International Conference 2027
-January 28-30, 2027 · Hilton Los Angeles/Universal City
-
-Early Bird pricing from $545 ends November 15.
-https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=post&amp;utm_campaign=social_2027&amp;utm_content=carrossel-experience
-
-#ATHENA2027 #WomenInLeadership #LeadershipDevelopment</pre><button type="button" class="copy" data-for="s-carrossel-experience-li">Copy text</button></div></div></section>
+<section class="howto" id="how-to" aria-labelledby="howto-h">
+<h2 class="group" id="howto-h">How to post your kit</h2>
+<p class="grouplead">Three posts, about five minutes. Early Bird pricing ends November 15, so the sooner you post, the more your code is worth to your network.</p>
+<div class="steps">
+<article class="step"><h3>1. Save your images</h3><p class="dim">Any device</p><ol>
+<li>Tap or click an image in your kit to open it full size.</li>
+<li><b>Phone:</b> press and hold the image, then choose <b>Save to Photos</b> (iPhone) or <b>Download image</b> (Android).</li>
+<li><b>Computer:</b> right-click the image and choose <b>Save image as</b>.</li>
+<li>Prefer one file with all your text? Open <b>captions.txt</b> in your kit.</li></ol></article>
+<article class="step"><h3>2. Instagram post</h3><p class="dim">Image 1080 × 1350 (4:5)</p><ol>
+<li>Tap <b>+</b>, then <b>Post</b>, and choose your post image.</li>
+<li>Keep the full vertical crop (tap the crop icon if Instagram cuts it to a square).</li>
+<li>Back on the kit, tap <b>Copy text</b> and paste it as your caption.</li>
+<li>Tap <b>Tag people</b>, then <b>Invite collaborator</b>, and add <b>@athena_international</b> so the post also shows on ATHENA's profile.</li>
+<li>Tap <b>Share</b>.</li></ol></article>
+<article class="step"><h3>3. Instagram Story</h3><p class="dim">Image 1080 × 1920 (9:16)</p><ol>
+<li>Tap <b>+</b>, then <b>Story</b>, and choose your Story image.</li>
+<li>On the kit, tap <b>Copy link</b>.</li>
+<li>In Instagram, tap the sticker icon, choose <b>Link</b>, and paste.</li>
+<li>Tap <b>Customize sticker text</b> and type <b>Get your pass</b>. Place the sticker over the empty blue space at the bottom.</li>
+<li>Add a <b>Mention</b> sticker with <b>@athena_international</b>, then share.</li></ol></article>
+<article class="step"><h3>4. LinkedIn post</h3><p class="dim">Image 1200 × 1500 (4:5)</p><ol>
+<li>Tap <b>Start a post</b>, then the photo icon, and choose your LinkedIn image.</li>
+<li>On the kit, tap <b>Copy text</b> and paste it into the post. The link becomes clickable on its own.</li>
+<li>Type <b>@ATHENA International</b> anywhere in the text and pick the company page from the list.</li>
+<li>Tap <b>Post</b>.</li></ol></article>
+</div>
+<p class="tip">Your code works on General Admission and VIP passes. Mention it in comments and replies too, and repost your Story a week before November 15.</p>
+</section>
 
 <footer><span class="ls">LUASOL Collective</span><span>Prepared for ATHENA International · Conference January 28-30, 2027</span></footer>
 </div>
@@ -1681,7 +1572,8 @@ https://conference.athenainternational.org/?utm_source=linkedin&amp;utm_medium=p
 document.addEventListener('click',function(e){
   var b=e.target.closest('.copy'); if(!b) return;
   var pre=document.getElementById(b.dataset.for), t=pre.textContent;
-  function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},1600)}
+  var lab=b.dataset.label||'Copy text';
+  function ok(){b.textContent='Copied';setTimeout(function(){b.textContent=lab},1600)}
   function sel(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Copy'}
   try{navigator.clipboard.writeText(t).then(ok,sel)}catch(err){sel()}
 });
